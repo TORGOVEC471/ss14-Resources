@@ -1,0 +1,171 @@
+- type: entity
+  id: ADTNeutralSpiderSpawn
+  parent: BaseStationEventShortDelay
+  components:
+  - type: StationEvent
+    startAnnouncement: station-event-vent-creatures-start-horde-announcement
+    startAudio:
+      path: /Audio/ADT/Announcements/announce_dig.ogg
+    earliestStart: 20
+    minimumPlayers: 15
+    weight: 5
+    duration: 60
+  - type: VentHordeRule
+    table: !type:GroupSelector
+      rolls: 4, 8
+      children:
+      - id: ADTMobMiniSpider
+
+- type: entity
+  id: Pirates
+  parent: BaseGameRule
+  components:
+  - type: StationEvent
+    earliestStart: 40
+    weight: 2
+    minimumPlayers: 30
+    reoccurrenceDelay: 30
+    duration: 1
+  - type: PiratesRule
+
+- type: entity
+  id: CentComRandomEvent
+  parent: BaseGameRule
+  components:
+  - type: StationEvent
+    earliestStart: 30
+    weight: 3
+    reoccurrenceDelay: 30
+  - type: CentComRandomEvent
+
+- type: entity
+  id: ADTCentComRandomEventRevolution
+  parent: CentComRandomEvent
+  components:
+  - type: StationEvent
+    weight: 0
+  - type: CentComRandomEvent
+    weights:
+      101: 2
+      102: 2
+      103: 2
+      104: 2
+      105: 2
+      106: 2
+      107: 2
+      108: 2
+      109: 2
+      110: 2
+      111: 2
+      112: 2
+      113: 2
+      114: 2
+      115: 2
+      116: 2
+    variantCounts:
+      101: 8
+      106: 4
+
+- type: entity
+  parent: BaseGameRule
+  id: MorphSpawn
+  components:
+  - type: StationEvent
+    weight: 6.5
+    earliestStart: 40
+    reoccurrenceDelay: 20
+    minimumPlayers: 25
+    duration: null
+  - type: SpaceSpawnRule
+    spawnDistance: 0
+  - type: AntagSpawner
+    prototype: ADTBaseMobMorph
+  - type: AntagObjectives
+    objectives:
+    - MorphSurviveObjective
+  - type: AntagSelection
+    agentName: morph-round-end-agent-name
+    antags:
+    - !type:FixedAntagCount
+      proto: ADTMorph
+  - type: DragonRule #чтобы отдельный рул не писать
+
+- type: entity
+  id: VoxRaidersEvent
+  parent: BaseGameRule
+  components:
+  - type: StationEvent
+    earliestStart: 40
+    weight: 3
+    minimumPlayers: 30
+    reoccurrenceDelay: 30
+    duration: 1
+  - type: LoadMapRule
+    mapPath: /Maps/ADTMaps/Nonstation/voxbase.yml
+
+- type: entity
+  id: IanHeroEvent
+  parent: BaseGameRule
+  components:
+  - type: StationEvent
+    startAudio:
+      path: /Audio/ADT/Announcements/announce_dig.ogg
+    weight: 1
+    reoccurrenceDelay: 300
+    duration: 1
+  - type: LoadMapRule
+    mapPath: /Maps/ADTMaps/Shuttles/Ian.yml
+  - type: IanHeroEvent
+
+- type: entity
+  id: SuperHeroEvent
+  parent: BaseGameRule
+  components:
+  - type: StationEvent
+    startAudio:
+      path: /Audio/ADT/Announcements/announce_dig.ogg
+    earliestStart: 20
+    weight: 1
+    minimumPlayers: 30
+    reoccurrenceDelay: 300
+    duration: 1
+  - type: LoadMapRule
+    mapPath: /Maps/ADTMaps/Shuttles/superhero.yml
+  - type: HeroEvent
+  
+- type: entity
+  parent: BaseGameRule
+  id: WormholesSpawn
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StationEvent
+    startAnnouncement: station-event-wormholes-spawn-announcement
+    startAudio:
+      path: /Audio/ADT/Announcements/announce_dig.ogg
+    weight: 8
+    duration: 10
+    minimumPlayers: 15
+    earliestStart: 35
+    reoccurrenceDelay: 60
+  - type: RandomSpawnRule
+    prototype: ADTEventJaunterPortal
+    minCount: 100
+    maxCount: 300
+
+- type: entity
+  parent: BaseGameRule
+  id: SpaceEmperorSpawn
+  components:
+  - type: StationEvent
+    weight: 1
+    earliestStart: 10
+    reoccurrenceDelay: 75
+    duration: null
+  - type: SpaceSpawnRule
+    spawnDistance: 0
+  - type: AntagSelection
+    antags:
+    - !type:FixedAntagCount
+      proto: ADTSpaceEmperor
+  - type: DragonRule #чтобы отдельный рул не писать
+  - type: GhostRoleAntagSpawner

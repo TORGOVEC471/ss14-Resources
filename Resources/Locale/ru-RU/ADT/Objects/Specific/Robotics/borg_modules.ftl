@@ -1,0 +1,10 @@
+ent-ADTBorgModuleDetention = модуль задержания киборга
+    .desc = { ent-BaseBorgModule.desc }
+ent-ADTBorgModuleHarm = модуль вреда киборга
+    .desc = { ent-BaseBorgModule.desc }
+ent-ADTBorgModuleRPD = атмосферный модуль киборга
+    .desc = { ent-BaseBorgModule.desc }
+ent-ADTBorgModuleSalvage = шахтёрский модуль киборга
+    .desc = { ent-BaseBorgModule.desc }
+ent-ADTBorgModuleAdvancedSalvage = продвинутый шахтёрский модуль киборга
+    .desc = { ent-BaseBorgModule.desc }

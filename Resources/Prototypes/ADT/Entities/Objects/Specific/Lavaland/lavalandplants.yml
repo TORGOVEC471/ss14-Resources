@@ -1,0 +1,190 @@
+- type: entity
+  name: cactus fruit
+  parent: FoodProduceBase
+  id: ADTFoodCactusBerry
+  description: A cactus fruit covered in a thick, reddish skin. And some ash.
+  components:
+  - type: FlavorProfile
+    flavors:
+    - sweet
+    - fruity
+    - jelly
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Food/cactusberry.rsi
+    state: cactus_fruit
+  - type: Solution
+    solution:
+      maxVol: 15
+      reagents:
+      - ReagentId: Vitamin
+        Quantity: 2
+      - ReagentId: Nutriment
+        Quantity: 2
+      - ReagentId: ADTVitriumFroth
+        Quantity: 4
+  - type: Produce
+    plantId: ADTLavalandCactusPlants
+  - type: Extractable
+    grindableSolutionName: food
+    juiceSolution:
+      reagents:
+      - ReagentId: Water
+        Quantity: 10
+  - type: StaticPrice
+    price: 150
+  - type: Tag
+    tags:
+    - Fruit
+    - ADTCactusBerry
+
+- type: entity
+  abstract: true
+  parent: BaseStructure
+  id: ADTBaseLavaCactus
+  suffix: Structure
+  components:
+  - type: Transform
+    anchored: true
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.35
+        hard: false
+        layer:
+          - LowImpassable
+  - type: StepTrigger
+    intersectRatio: 0.2
+    requiredTriggeredSpeed: 0
+  - type: PreventableStepTrigger
+  - type: ADTCaltrop
+    damage:
+      types:
+        Piercing: 3
+    minMultiplier: 1
+    maxMultiplier: 2
+    probability: 0.7
+    paralyzeTime: 6
+    sound:
+      path: /Audio/Weapons/pierce.ogg
+  - type: InteractionOutline
+  - type: Sprite
+    sprite: ADT/Structures/Specific/lavacactus.rsi
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Injurable
+    damageContainer: StructuralInorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 150
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  abstract: true
+  parent: ADTBaseLavaCactus
+  id: ADTLavaCactus
+  name: fruiting cacti
+  description: Several prickly cacti, brimming with ripe fruit and covered in a thin layer of ash.
+  components:
+  - type: ADTAshFlora
+    product: ADTFoodCactusBerry
+    minAmount: 1
+    maxAmount: 2
+    harvestTime: 1
+    popupLow: adt-ash-flora-cacti-low
+    popupMedium: adt-ash-flora-cacti-medium
+    popupHigh: adt-ash-flora-cacti-high
+
+- type: entity
+  parent: ADTLavaCactus
+  id: ADTLavaCactusOne
+  components:
+  - type: Sprite
+    state: cactus1
+  - type: ADTAshFlora
+    harvestedPrototype: ADTLavaCactusOneEmpty
+
+- type: entity
+  parent: ADTLavaCactus
+  id: ADTLavaCactusTwo
+  components:
+  - type: Sprite
+    state: cactus2
+  - type: ADTAshFlora
+    harvestedPrototype: ADTLavaCactusTwoEmpty
+
+- type: entity
+  parent: ADTLavaCactus
+  id: ADTLavaCactusThree
+  components:
+  - type: Sprite
+    state: cactus3
+  - type: ADTAshFlora
+    harvestedPrototype: ADTLavaCactusThreeEmpty
+
+- type: entity
+  parent: ADTLavaCactus
+  id: ADTLavaCactusFour
+  components:
+  - type: Sprite
+    state: cactus4
+  - type: ADTAshFlora
+    harvestedPrototype: ADTLavaCactusFourEmpty
+
+- type: entity
+  abstract: true
+  parent: ADTBaseLavaCactus
+  id: ADTLavaCactusEmpty
+  name: cacti
+  description: A bunch of prickly cacti. You can see fruits slowly growing beneath the covering of ash.
+
+- type: entity
+  parent: ADTLavaCactusEmpty
+  id: ADTLavaCactusOneEmpty
+  components:
+  - type: Sprite
+    state: cactus1p
+  - type: ADTAshFloraRegrowth
+    prototype: ADTLavaCactusOne
+    minTime: 480
+    maxTime: 720
+
+- type: entity
+  parent: ADTLavaCactusEmpty
+  id: ADTLavaCactusTwoEmpty
+  components:
+  - type: Sprite
+    state: cactus2p
+  - type: ADTAshFloraRegrowth
+    prototype: ADTLavaCactusTwo
+    minTime: 480
+    maxTime: 720
+
+- type: entity
+  parent: ADTLavaCactusEmpty
+  id: ADTLavaCactusThreeEmpty
+  components:
+  - type: Sprite
+    state: cactus3p
+  - type: ADTAshFloraRegrowth
+    prototype: ADTLavaCactusThree
+    minTime: 480
+    maxTime: 720
+
+- type: entity
+  parent: ADTLavaCactusEmpty
+  id: ADTLavaCactusFourEmpty
+  components:
+  - type: Sprite
+    state: cactus4p
+  - type: ADTAshFloraRegrowth
+    prototype: ADTLavaCactusFour
+    minTime: 480
+    maxTime: 720

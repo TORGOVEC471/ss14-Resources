@@ -1,0 +1,109 @@
+- type: entity
+  id: ADTBaseFishingRod
+  parent: BaseItem
+  abstract: true
+  components:
+  - type: Item
+    size: Large
+  - type: Wieldable
+  - type: ADTFishingRod
+    hookSize: 0.3
+    efficiency: 1.3
+  - type: ItemSlots
+    slots:
+      bait:
+        name: adt-fishing-bait-slot
+        whitelist:
+          components:
+          - ADTFishingBait
+        insertSound:
+          path: /Audio/Effects/pop.ogg
+        ejectSound:
+          path: /Audio/Effects/pop.ogg
+  - type: ContainerContainer
+    containers:
+      bait: !type:ContainerSlot
+  - type: UserInterface
+    interfaces:
+      enum.ADTFishingUiKey.Key:
+        type: ADTFishingMinigameBoundUserInterface
+  - type: UseDelay
+    delay: 0.5
+  - type: MeleeWeapon
+    wideAnimationRotation: 45
+    attackRate: 1.0
+    damage:
+      types:
+        Piercing: 4
+
+# Basic rod
+- type: entity
+  id: ADTFishingRod
+  parent: ADTBaseFishingRod
+  name: fishing rod
+  description: It's time to go fishing!
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Specific/Fishing/fishing_rod.rsi
+    state: icon
+  - type: Item
+    sprite: ADT/Objects/Specific/Fishing/fishing_rod.rsi
+    size: Large
+
+# Variation of a normal rod
+- type: entity
+  id: ADTFishingRodGoon
+  suffix: Goon
+  parent: ADTFishingRod
+  name: fishing rod
+  description: It's time to go fishing!
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Specific/Fishing/goon_rod.rsi
+    state: icon
+  - type: Item
+    sprite: ADT/Objects/Specific/Fishing/goon_rod.rsi
+    size: Large
+
+# Makeshift rod
+- type: entity
+  id: ADTFishingRodMakeshift
+  parent: ADTBaseFishingRod
+  name: makeshift fishing rod
+  description: Probably would be hard to catch a fish using that.
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Specific/Fishing/makeshift_rod.rsi
+    state: icon
+  - type: Item
+    sprite: ADT/Objects/Specific/Fishing/makeshift_rod.rsi
+    size: Large
+  - type: ADTFishingRod
+    hookSize: 0.26
+    efficiency: 1.15
+  - type: Construction
+    graph: FishingRodMakeshift
+    node: makeshiftRod
+
+# Golden rod
+- type: entity
+  id: ADTFishingRodGolden
+  parent: ADTBaseFishingRod
+  name: golden fishing rod
+  description: Finally, you caught 250 fishes. Here's your trophey.
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Specific/Fishing/golden_rod.rsi
+    state: icon
+  - type: Item
+    sprite: ADT/Objects/Specific/Fishing/golden_rod.rsi
+    size: Large
+  - type: ADTFishingRod
+    hookSize: 0.38
+    efficiency: 1.6
+  - type: MeleeWeapon
+    wideAnimationRotation: 45
+    attackRate: 1.0
+    damage:
+      types:
+        Piercing: 10

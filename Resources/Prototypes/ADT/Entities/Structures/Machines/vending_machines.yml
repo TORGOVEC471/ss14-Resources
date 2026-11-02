@@ -1,0 +1,378 @@
+- type: entity
+  parent: VendingMachine
+  id: ADTVendingMachinePatholoDrobe
+  name: PatholoDrobe
+  description: A vending machine that dispences new clothing for pathologists.
+  components:
+  - type: ADTVendingMachine
+    pack: PatholodrobeInventory
+  - type: VendingMachineVisuals
+    offState: off
+    brokenState: broken
+    normalState: normal-unshaded
+  - type: DatasetVocalizer
+    dataset: PatholodrobeAds
+  - type: Sprite
+    sprite: ADT/Structures/Machines/VendingMachines/patholodrobe.rsi
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: AccessReader
+    access: [["Medical"]]
+  - type: PointLight
+    radius: 1.8
+    energy: 1.6
+    color: "#1ca9d4"
+
+#СтильноМат
+
+- type: entity
+  parent: VendingMachine
+  id: ADTVendingMachinePrazatClothing
+  name: StyleMate
+  description: A vending machine for specific clothing.
+  components:
+  - type: ADTVendingMachine
+    priceMultiplier: 0.8
+    pack: ADTPrazatClothesMateInventory
+  - type: VendingMachineVisuals
+    offState: off
+    brokenState: broken
+    normalState: normal-unshaded
+    denyState: deny-unshaded
+  - type: DatasetVocalizer
+    dataset: ClothesMateAds
+  - type: Speech
+  - type: Tag
+    tags:
+      - WhitelistChameleon
+  - type: Sprite
+    sprite: ADT/Structures/Machines/VendingMachines/prazatomat.rsi
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: PointLight
+    radius: 1.8
+    energy: 1.6
+    color: "#c2adff"
+  - type: TTS # Corvax-TTS
+    voice: bebey
+  - type: StaticPrice
+    price: -4000
+
+# Оружейная тсф
+
+- type: entity
+  parent: VendingMachine
+  id: ADTVendingMachineTSFArmoury
+  name: TSF Armoury
+  description: TSF Armoury
+  components:
+  - type: ADTVendingMachine
+    pack: ADTTSFArmouryInventory
+  - type: VendingMachineVisuals
+    offState: off
+    brokenState: broken
+  - type: Sprite
+    sprite: ADT/Structures/Machines/VendingMachines/tsf_armoury.rsi
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "base"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+
+# Таблеткомат
+
+- type: entity
+  parent: VendingMachine
+  id: ADTVendingMachinePill
+  name: Pill-O-Mat
+  description: (Almost) A practical solution to many of your sores.
+  components:
+  - type: ADTVendingMachine
+    pack: PillInventory
+  - type: VendingMachineVisuals
+    offState: off
+    brokenState: broken
+    normalState: normal-unshaded
+    denyState: deny-unshaded
+    ejectState: eject-unshaded
+  - type: VendingMachineEject
+    ejectDelay: 0.6
+  - type: DatasetVocalizer
+    dataset: PillAds
+  - type: Speech
+  - type: Sprite
+    sprite: ADT/Structures/Machines/VendingMachines/pillomat.rsi
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: PointLight
+    radius: 1.8
+    energy: 1.6
+    color: "#a1e1f0"
+  - type: StaticPrice
+    price: 2600
+
+# Парашкаф
+
+- type: entity
+  parent: VendingMachine
+  id: ADTVendingMachineParaDrobe
+  name: ParaDrobe
+  description: A vending machine that dispences new clothing for paramedics.
+  components:
+  - type: ADTVendingMachine
+    pack: ParadrobeInventory
+  - type: VendingMachineVisuals
+    offState: off
+    brokenState: broken
+    normalState: normal-unshaded
+  - type: DatasetVocalizer
+    dataset: MediDrobeAds
+  - type: Sprite
+    sprite: ADT/Structures/Machines/VendingMachines/paradrobe.rsi
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: AccessReader
+    access: [["Medical"]]
+  - type: PointLight
+    radius: 1.8
+    energy: 1.6
+    color: "#1ca9d4"
+
+# ГраждоМед
+
+- type: entity
+  parent: VendingMachine
+  id: ADTVendingMachineCiviMedVend
+  name: CiviMedVend
+  description: CiviMed, distributing lifesaving meds harder than the rocks you break! Miners, DON'T DIE!
+  components:
+  - type: ADTVendingMachine
+    pack: ADTCiviMedVendInventory
+    priceMultiplier: 1.1
+    # ejectState: eject-unshaded  No sprite, see chefvend/dinnerware/BODA/etc for expamples
+  - type: VendingMachineVisuals
+    offState: off
+    brokenState: broken
+    normalState: normal-unshaded
+  - type: VendingMachineEject
+    ejectDelay: 0.6
+  - type: DatasetVocalizer
+    dataset: ADTCiviMedAds
+  - type: Sprite
+    sprite: ADT/Structures/Machines/VendingMachines/civimed.rsi
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: PointLight
+    radius: 1.5
+    energy: 1.6
+    color: "#4b93ad"
+  - type: StaticPrice
+    price: -2000
+
+
+# Автомат с мороженкой.
+
+- type: entity
+  parent: VendingMachine
+  id: ADTIceCreamVendInventory
+  name: Ice CreamMat
+  description: Look! There a ice cream!
+  components:
+  - type: ADTVendingMachine
+    pack: ADTIceCreamVendInventory
+    initialStockQuality: 0.33
+    priceMultiplier: 0.57 # ADT-Economy
+  - type: VendingMachineVisuals
+    offState: off
+    brokenState: broken
+    normalState: normal-unshaded
+    ejectState: eject-unshaded
+    denyState: deny-unshaded
+  - type: VendingMachineEject
+    ejectDelay: 1
+  - type: VendingMachineDispenseOnHit
+    chance: 0.25
+    threshold: 2
+  - type: DatasetVocalizer
+    dataset: IceCreammatAds
+  - type: SpeakOnUIClosed
+    pack: GenericVendGoodbyes
+  - type: Sprite
+    sprite: ADT/Structures/Machines/VendingMachines/icecream.rsi
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: PointLight
+    radius: 1.5
+    energy: 1.6
+    color: "#9dc5c9"
+
+
+# Автомат с музыкальными инструментами
+
+- type: entity
+  parent: VendingMachine
+  id: ADTVendingMachineMusician
+  name: Musicianmat
+  description: A vending machine with musical instruments for a musician.
+  components:
+  - type: ADTVendingMachine
+    pack: ADTMusicomatInventory
+    allForFree: true
+  - type: VendingMachineVisuals
+    offState: off
+    brokenState: broken
+    normalState: normal-unshaded
+    ejectState: eject-unshaded
+    denyState: deny-unshaded
+    screenState: screen
+  - type: DatasetVocalizer
+    dataset: MusicDrobeAds
+  - type: Sprite
+    sprite: ADT/Structures/Machines/VendingMachines/musicomat.rsi
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+    - state: "screen"
+      map: ["enum.VendingMachineVisualLayers.Screen"]
+      shader: unshaded
+  - type: PointLight
+    radius: 1.5
+    energy: 3.0
+    color: "#c73434"
+
+#Бесплатные версии торгоматов
+- type: entity
+  parent: VendingMachineCoffee
+  id: ADTVendingMachineCoffeeFree
+  name: Solar's Best Hot Drinks
+  description: Served boiling so it stays hot all shift!
+  suffix: Free
+  components:
+  - type: ADTVendingMachine
+    pack: HotDrinksMachineInventory
+    initialStockQuality: 0.33
+    allForFree: true # ADT-Economy
+
+  - type: VendingMachineVisuals
+    offState: off
+    brokenState: broken
+    normalState: normal-unshaded
+    ejectState: eject-unshaded
+    denyState: deny-unshaded
+    screenState: screen
+  - type: VendingMachineEject
+    ejectDelay: 5
+    soundVend: /Audio/Machines/machine_vend_hot_drink.ogg
+  - type: VendingMachineDispenseOnHit
+    chance: 0.25
+    threshold: 2
+- type: entity
+  parent: VendingMachineGames
+  id: ADTVendingMachineGamesFree
+  name: Good Clean Fun
+  description: Vends things that the Captain and Head of Personnel are probably not going to appreciate you fiddling with instead of your job...
+  suffix: Free
+  components:
+  - type: ADTVendingMachine
+    pack: GoodCleanFunInventory
+    allForFree: true # ADT-Economy
+
+  - type: VendingMachineVisuals
+    offState: off
+    brokenState: broken
+    normalState: normal-unshaded
+    ejectState: eject-unshaded
+  - type: VendingMachineEject
+    ejectDelay: 1.8
+- type: entity
+  parent: VendingMachineSnack
+  id: ADTVendingMachineSnackFree
+  name: Getmore Chocolate Corp
+  description: A snack machine courtesy of the Getmore Chocolate Corporation, based out of Mars.
+  suffix: Free
+  components:
+  - type: ADTVendingMachine
+    pack: GetmoreChocolateCorpInventory
+    initialStockQuality: 0.33
+    allForFree: true # ADT-Economy
+
+  - type: VendingMachineVisuals
+    offState: off
+    brokenState: broken
+    normalState: normal-unshaded
+    ejectState: eject-unshaded
+    denyState: deny-unshaded
+  - type: VendingMachineDispenseOnHit
+    chance: 0.25
+    threshold: 2
+- type: entity
+  parent: VendingMachine
+  id: ADTVendingMachineBarberDrobe
+  name: Barbermat
+  description: A vending machine with stylish clothes for a barber.
+  components:
+  - type: ADTVendingMachine
+    pack: ADTBarberdrobeInventory
+  - type: VendingMachineVisuals
+    offState: off
+    brokenState: broken
+    normalState: normal-unshaded
+  - type: Sprite
+    sprite: ADT/Structures/Machines/VendingMachines/barberdrobe.rsi
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: AccessReader
+    access: [["Service"]]
+  - type: PointLight
+    radius: 1.8
+    energy: 1.6
+    color: "#cfcfcf"

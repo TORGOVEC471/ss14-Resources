@@ -1,0 +1,14 @@
+- type: entity
+  id: ADTActionVehicleHorn
+  name: Honk
+  description: Honk!
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Action
+    useDelay: 3.4
+  - type: Sprite
+    sprite: Objects/Fun/bikehorn.rsi
+    layers:
+    - state: icon
+  - type: InstantAction
+    event: !type:HonkActionEvent

@@ -1,0 +1,23 @@
+- type: npcFaction
+  id: KMT
+  hostile:
+  - SimpleHostile
+  - Xeno
+  - Zombie
+  - Heretic # goob edit - heretics
+  - Dragon
+  - AllHostile
+  - Wizard
+  - TSF
+
+- type: npcFaction
+  id: TSF
+  hostile:
+  - SimpleHostile
+  - Xeno
+  - Zombie
+  - Heretic # goob edit - heretics
+  - Dragon
+  - AllHostile
+  - Wizard
+  - KMT

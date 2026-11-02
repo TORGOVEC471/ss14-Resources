@@ -1,0 +1,30 @@
+- type: entity
+  id: ADTActionMimeFingerGun
+  name: Finger Gun
+  description: Shoot an invisible energy bolt from your finger!
+  components:
+  - type: Action
+    useDelay: 30
+  - type: Sprite
+    sprite: ADT/Interface/Actions/mime.rsi
+    layers:
+    - state: fingergun
+  - type: InstantAction
+    event: !type:MimeFingerGunActionEvent
+
+- type: entity
+  id: ADTActionMimeSilence
+  name: Silence
+  description: Silence everyone around you with a theatrical gesture!
+  components:
+  - type: Action
+    useDelay: 60
+  - type: Sprite
+    sprite: ADT/Interface/Actions/mime.rsi
+    layers:
+    - state: mime_silence
+  - type: InstantAction
+    event:
+      !type:MimeSilenceActionEvent
+      range: 10
+      muteDuration: 20

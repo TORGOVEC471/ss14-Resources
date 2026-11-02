@@ -1,0 +1,43 @@
+- type: entity
+  name: stabilizing serum
+  id: ADTStabilizingSerum
+  parent: BaseItem
+  description: Inject a legion core with this serum to preserve its healing powers indefinitely. It won't work on a decayed one.
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Specific/Salvage/stabilizing_serum.rsi
+    state: icon
+  - type: Item
+    size: Small
+  - type: Tag
+    tags:
+    - ADTStabilizingSerum
+
+- type: entity
+  name: stable legion core
+  id: ADTLegionCoreStable
+  parent: BaseItem
+  description: The core beats steadily, as if it had never left a body. It will never decay - smear it on a wound or implant it into your chest.
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Specific/Lavaland/loot.rsi
+    state: legion_core_stable
+  - type: ADTRegenerativeCore
+    duration: 60
+    applyDelay: 0
+    implantDelay: 5
+    implantCellularMultiplier: 1
+    instantHeal:
+      types:
+        Blunt: -16.5
+        Slash: -16.5
+        Piercing: -16.5
+        Heat: -16.5
+        Cold: -16.5
+        Shock: -16.5
+  - type: Construction
+    graph: ADTLegionCoreStable
+    node: stable
+  - type: Tag
+    tags:
+    - ADTLegionCore

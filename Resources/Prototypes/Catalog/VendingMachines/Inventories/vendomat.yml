@@ -1,0 +1,24 @@
+- type: vendingMachineInventory
+  id: VendomatInventory
+  startingInventory:
+    RemoteSignaller: 1
+    Igniter: 2
+    Wirecutter: 2
+    Screwdriver: 2
+    CableApcStack: 2
+    FlashlightLantern: 2
+    PowerCellSmallPrinted: 3
+    # ADT-Tweak start
+    CapacitorStockPart: 3
+    MicroServoStockPart: 3
+    MatterBinStockPart: 2
+    ScanningModuleStockPart: 2
+    MicroLaserStockPart: 2
+    # ADT-Tweak end
+  contrabandInventory:
+    ProximitySensor: 1
+    LeftArmBorg: 1
+# ADT-tweak start
+    ADTToyBlasterGunRed: 1
+    LightHeadBorg: 1
+# ADT-tweak end

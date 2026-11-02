@@ -1,0 +1,543 @@
+- type: startingGear
+  id: ADTERTLeaderGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitERTLeader
+    back: ClothingBackpackERTLeader
+    shoes: ADTClothingShoesBootsMagERT
+    head: ClothingHeadHelmetERTLeader
+    eyes: ClothingEyesNightVisionAdvanced
+    neck: ADTClothingBeltHolsterN1984Fill
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterArmorBasicSlim
+    id: ERTLeaderPDA
+    ears: ClothingHeadsetAltCentCom
+    belt: ADTShipBattleClothingBeltWarbelt
+    pocket1: DoubleEmergencyOxygenTankFilled
+    pocket2: ADTBaseUplinkBOBERTLeader
+    underwearb: ADTClothingUnderwearBottomBriefsWhite
+    underweart: ADTClothingUnderwearTopTShirt
+    socks: ADTClothingUnderwearSocksComfyGrey
+    suitstorage: JetpackBlackFilled
+  storage:
+    back:
+    - FoodSnackNutribrick
+    - FoodSnackNutribrick
+    - DrinkWaterBottleFull
+    - DrinkWaterBottleFull
+    - JawsOfLife
+    - PinpointerNuclear
+    - SpaceCash1000
+    - CombatKnife
+    - ADTMedkitERTFilled
+    - BoxFolderCentCom
+    - RubberStampCentcom
+
+- type: startingGear
+  id: ADTERTLeaderGearEVA
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitERTLeader
+    back: ClothingBackpackERTLeader
+    shoes: ADTClothingShoesBootsMagERT
+    mask: ClothingMaskGasERT
+    eyes: ClothingEyesNightVisionAdvanced
+    neck: ADTClothingBeltHolsterN1984Fill
+    gloves: ClothingHandsGlovesCombat
+    # outerClothing: ClothingOuterHardsuitERTLeader #ADT tweak: выбор скаф/МОД через ваучер
+    id: ERTLeaderPDA
+    ears: ClothingHeadsetAltCentCom
+    belt: ADTShipBattleClothingBeltWarbelt
+    pocket1: DoubleEmergencyOxygenTankFilled
+    pocket2: ADTBaseUplinkBOBERTLeader
+    underwearb: ADTClothingUnderwearBottomBriefsWhite
+    underweart: ADTClothingUnderwearTopTShirt
+    socks: ADTClothingUnderwearSocksComfyGrey
+  storage:
+    back:
+    - ADTERTLeaderVoucher #ADT tweak: выбор скаф/МОД
+    - FoodSnackNutribrick
+    - FoodSnackNutribrick
+    - DrinkWaterBottleFull
+    - DrinkWaterBottleFull
+    - JawsOfLife
+    - PinpointerNuclear
+    - SpaceCash1000
+    - CombatKnife
+    - ADTMedkitERTFilled
+    - BoxFolderCentCom
+    - RubberStampCentcom
+    - JetpackBlackFilled
+
+- type: startingGear
+  id: ADTERTLeaderGearEVARiot
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitERTLeader
+    back: ClothingBackpackERTLeader
+    shoes: ADTClothingShoesBootsMagERT
+    eyes: ClothingEyesNightVisionAdvanced
+    neck: ADTClothingBeltHolsterN1984Fill
+    gloves: ClothingHandsGlovesCombat
+    mask: ClothingMaskGasERT
+    outerClothing: ADTClothingOuterERTRiotHardsuit
+    id: ERTLeaderPDA
+    ears: ClothingHeadsetAltCentCom
+    belt: ADTShipBattleClothingBeltWarbelt
+    pocket1: DoubleEmergencyOxygenTankFilled
+    pocket2: ADTBaseUplinkBOBERTRiotLeader
+    underwearb: ADTClothingUnderwearBottomBriefsWhite
+    underweart: ADTClothingUnderwearTopTShirt
+    socks: ADTClothingUnderwearSocksComfyGrey
+    suitstorage: JetpackBlackFilled
+  storage:
+    back:
+    - FoodSnackNutribrick
+    - FoodSnackNutribrick
+    - DrinkWaterBottleFull
+    - DrinkWaterBottleFull
+    - JawsOfLife
+    - PinpointerNuclear
+    - SpaceCash1000
+    - CombatKnife
+    - ADTMedkitERTFilled
+    - BoxFolderCentCom
+    - RubberStampCentcom
+    - BoxHandcuff
+
+#engie
+
+- type: startingGear
+  id: ADTERTEngineerGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitERTEngineer
+    back: ClothingBackpackERTEngineer
+    shoes: ADTClothingShoesBootsMagERT
+    head: ClothingHeadHelmetERTEngineer
+    eyes: ClothingEyesNightVisionAdvanced
+    neck: ADTClothingBeltHolsterN1984Fill
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterArmorBasicSlim
+    id: ERTEngineerPDA
+    ears: ClothingHeadsetAltCentCom
+    belt: ADTClothingWarBeltEngineerERTFilled
+    pocket1: DoubleEmergencyOxygenTankFilled
+    pocket2: ADTBaseUplinkBOBERTEngineer
+    underwearb: ADTClothingUnderwearBottomBriefsWhite
+    underweart: ADTClothingUnderwearTopTShirt
+    socks: ADTClothingUnderwearSocksComfyGrey
+    suitstorage: JetpackBlackFilled
+  storage:
+    back:
+    - FoodSnackNutribrick
+    - FoodSnackNutribrick
+    - DrinkWaterBottleFull
+    - DrinkWaterBottleFull
+    - PinpointerNuclear
+    - SpaceCash1000
+    - CombatKnife
+    - ADTMedkitERTFilled
+    - RCD
+    - RCDAmmo
+    - CableMVStack
+    - CableHVStack
+    - CableApcStack
+    - SheetPlasteel
+    - SheetSteel
+    - SheetGlass
+
+- type: startingGear
+  id: ADTERTEngineerGearEVA
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitERTEngineer
+    back: ClothingBackpackERTEngineer
+    shoes: ADTClothingShoesBootsMagERT
+    mask: ClothingMaskGasERT
+    eyes: ClothingEyesNightVisionAdvanced
+    neck: ADTClothingBeltHolsterN1984Fill
+    gloves: ClothingHandsGlovesCombat
+    # outerClothing: ClothingOuterHardsuitERTEngineer #ADT tweak: выбор скаф/МОД через ваучер
+    id: ERTEngineerPDA
+    ears: ClothingHeadsetAltCentCom
+    belt: ADTClothingWarBeltEngineerERTFilled
+    pocket1: DoubleEmergencyOxygenTankFilled
+    pocket2: ADTBaseUplinkBOBERTEngineer
+    underwearb: ADTClothingUnderwearBottomBriefsWhite
+    underweart: ADTClothingUnderwearTopTShirt
+    socks: ADTClothingUnderwearSocksComfyGrey
+  storage:
+    back:
+    - ADTERTEngineerVoucher #ADT tweak: выбор скаф/МОД
+    - FoodSnackNutribrick
+    - FoodSnackNutribrick
+    - DrinkWaterBottleFull
+    - DrinkWaterBottleFull
+    - PinpointerNuclear
+    - SpaceCash1000
+    - CombatKnife
+    - ADTMedkitERTFilled
+    - RCD
+    - RCDAmmo
+    - CableMVStack
+    - CableHVStack
+    - CableApcStack
+    - SheetPlasteel
+    - SheetSteel
+    - SheetGlass
+    - JetpackBlackFilled
+
+- type: startingGear
+  id: ADTERTEngineerGearEVARiot
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitERTEngineer
+    back: ClothingBackpackERTEngineer
+    shoes: ClothingShoesBootsCombat
+    mask: ClothingMaskGasERT
+    eyes: ClothingEyesNightVisionAdvanced
+    neck: ADTClothingBeltHolsterN1984Fill
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ADTClothingOuterERTRiotHardsuit
+    id: ERTEngineerPDA
+    ears: ClothingHeadsetAltCentCom
+    belt: ADTClothingWarBeltEngineerERTFilled
+    pocket1: DoubleEmergencyOxygenTankFilled
+    pocket2: ADTBaseUplinkBOBERTEngineerRiot
+    underwearb: ADTClothingUnderwearBottomBriefsWhite
+    underweart: ADTClothingUnderwearTopTShirt
+    socks: ADTClothingUnderwearSocksComfyGrey
+    suitstorage: JetpackBlackFilled
+  storage:
+    back:
+    - FoodSnackNutribrick
+    - FoodSnackNutribrick
+    - DrinkWaterBottleFull
+    - DrinkWaterBottleFull
+    - PinpointerNuclear
+    - SpaceCash1000
+    - CombatKnife
+    - ADTMedkitERTFilled
+    - RCD
+    - RCDAmmo
+    - CableMVStack
+    - CableHVStack
+    - CableApcStack
+    - SheetPlasteel
+    - SheetSteel
+    - SheetGlass
+    - BoxHandcuff
+
+# Security
+
+- type: startingGear
+  id: ADTERTSecurityGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitERTSecurity
+    back: ClothingBackpackERTSecurity
+    shoes: ADTClothingShoesBootsMagERT
+    head: ClothingHeadHelmetERTSecurity
+    eyes: ClothingEyesNightVisionAdvanced
+    neck: ADTClothingBeltHolsterN1984Fill
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterArmorBasicSlim
+    id: ERTSecurityPDA
+    ears: ClothingHeadsetAltCentCom
+    belt: ADTShipBattleClothingBeltWarbelt
+    pocket1: DoubleEmergencyOxygenTankFilled
+    pocket2: ADTBaseUplinkBOBERT
+    underwearb: ADTClothingUnderwearBottomBriefsWhite
+    underweart: ADTClothingUnderwearTopTShirt
+    socks: ADTClothingUnderwearSocksComfyGrey
+    suitstorage: JetpackBlackFilled
+  storage:
+    back:
+    - FoodSnackNutribrick
+    - FoodSnackNutribrick
+    - DrinkWaterBottleFull
+    - DrinkWaterBottleFull
+    - PinpointerNuclear
+    - SpaceCash1000
+    - CombatKnife
+    - ADTMedkitERTFilled
+    - CrowbarGreen
+
+- type: startingGear
+  id: ADTERTSecurityGearEVA
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitERTSecurity
+    back: ClothingBackpackERTSecurity
+    shoes: ADTClothingShoesBootsMagERT
+    mask: ClothingMaskGasERT
+    eyes: ClothingEyesNightVisionAdvanced
+    neck: ADTClothingBeltHolsterN1984Fill
+    gloves: ClothingHandsGlovesCombat
+    # outerClothing: ClothingOuterHardsuitERTSecurity #ADT tweak: выбор скаф/МОД через ваучер
+    id: ERTSecurityPDA
+    ears: ClothingHeadsetAltCentCom
+    belt: ADTShipBattleClothingBeltWarbelt
+    pocket1: DoubleEmergencyOxygenTankFilled
+    pocket2: ADTBaseUplinkBOBERT
+    underwearb: ADTClothingUnderwearBottomBriefsWhite
+    underweart: ADTClothingUnderwearTopTShirt
+    socks: ADTClothingUnderwearSocksComfyGrey
+    inhand: JetpackBlackFilled
+  storage:
+    back:
+    - ADTERTSecurityVoucher #ADT tweak: выбор скаф/МОД
+    - FoodSnackNutribrick
+    - FoodSnackNutribrick
+    - DrinkWaterBottleFull
+    - DrinkWaterBottleFull
+    - PinpointerNuclear
+    - SpaceCash1000
+    - CombatKnife
+    - ADTMedkitERTFilled
+    - JetpackBlackFilled
+    - CrowbarGreen
+
+- type: startingGear
+  id: ADTERTSecurityGearEVARiot
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitERTSecurity
+    back: ClothingBackpackERTSecurity
+    shoes: ClothingShoesBootsCombat
+    mask: ClothingMaskGasERT
+    eyes: ClothingEyesNightVisionAdvanced
+    neck: ADTClothingBeltHolsterN1984Fill
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ADTClothingOuterERTRiotHardsuit
+    id: ERTSecurityPDA
+    ears: ClothingHeadsetAltCentCom
+    belt: ADTShipBattleClothingBeltWarbelt
+    pocket1: DoubleEmergencyOxygenTankFilled
+    pocket2: ADTBaseUplinkBOBERTRiot
+    underwearb: ADTClothingUnderwearBottomBriefsWhite
+    underweart: ADTClothingUnderwearTopTShirt
+    socks: ADTClothingUnderwearSocksComfyGrey
+    suitstorage: JetpackBlackFilled
+  # inhand:
+  #   - AirTankFilled
+  storage:
+    back:
+    - FoodSnackNutribrick
+    - FoodSnackNutribrick
+    - DrinkWaterBottleFull
+    - DrinkWaterBottleFull
+    - PinpointerNuclear
+    - SpaceCash1000
+    - CombatKnife
+    - ADTMedkitERTFilled
+    - BoxHandcuff
+    - CrowbarGreen
+
+# Medical
+
+- type: startingGear
+  id: ADTERTMedicalGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitERTMedic
+    back: ClothingBackpackERTMedical
+    shoes: ADTClothingShoesBootsMagERT
+    head: ClothingHeadHelmetERTMedic
+    eyes: ClothingEyesNightVisionAdvanced
+    neck: ADTClothingBeltHolsterN1984Fill
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterArmorBasicSlim
+    id: ERTMedicPDA
+    ears: ClothingHeadsetAltCentCom
+    belt: ADTClothingWarBeltMedicERTFilled
+    pocket1: DoubleEmergencyOxygenTankFilled
+    pocket2: ADTBaseUplinkBOBERT
+    underwearb: ADTClothingUnderwearBottomBriefsWhite
+    underweart: ADTClothingUnderwearTopTShirt
+    socks: ADTClothingUnderwearSocksComfyGrey
+    suitstorage: JetpackBlackFilled
+  storage:
+    back:
+    - ADTMedkitAdvancedERT
+    - FoodSnackNutribrick
+    - FoodSnackNutribrick
+    - DrinkWaterBottleFull
+    - DrinkWaterBottleFull
+    - PinpointerNuclear
+    - SpaceCash1000
+    - CombatKnife
+    - ADTMedkitERTFilled
+    - HandheldCrewMonitor
+    - DefibrillatorCompact
+    - CrowbarGreen
+
+- type: startingGear
+  id: ADTERTMedicalGearEVA
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitERTMedic
+    back: ClothingBackpackERTMedical
+    shoes: ADTClothingShoesBootsMagERT
+    mask: ClothingMaskGasERT
+    eyes: ClothingEyesNightVisionAdvanced
+    neck: ADTClothingBeltHolsterN1984Fill
+    gloves: ClothingHandsGlovesCombat
+    # outerClothing: ClothingOuterHardsuitERTMedical #ADT tweak: выбор скаф/МОД через ваучер
+    id: ERTMedicPDA
+    ears: ClothingHeadsetAltCentCom
+    belt: ADTClothingWarBeltMedicERTFilled
+    pocket1: DoubleEmergencyOxygenTankFilled
+    pocket2: ADTBaseUplinkBOBERT
+    underwearb: ADTClothingUnderwearBottomBriefsWhite
+    underweart: ADTClothingUnderwearTopTShirt
+    socks: ADTClothingUnderwearSocksComfyGrey
+  storage:
+    back:
+    - ADTERTMedicalVoucher #ADT tweak: выбор скаф/МОД
+    - ADTMedkitAdvancedERT
+    - FoodSnackNutribrick
+    - FoodSnackNutribrick
+    - DrinkWaterBottleFull
+    - DrinkWaterBottleFull
+    - PinpointerNuclear
+    - SpaceCash1000
+    - CombatKnife
+    - ADTMedkitERTFilled
+    - JetpackBlackFilled
+    - HandheldCrewMonitor
+    - DefibrillatorCompact
+    - CrowbarGreen
+
+- type: startingGear
+  id: ADTERTMedicalGearEVARiot
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitERTMedic
+    back: ClothingBackpackERTMedical
+    shoes: ClothingShoesBootsCombat
+    mask: ClothingMaskGasERT
+    eyes: ClothingEyesNightVisionAdvanced
+    neck: ADTClothingBeltHolsterN1984Fill
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ADTClothingOuterERTRiotHardsuit
+    id: ERTMedicPDA
+    ears: ClothingHeadsetAltCentCom
+    belt: ADTClothingWarBeltMedicERTFilled
+    pocket1: DoubleEmergencyOxygenTankFilled
+    pocket2: ADTBaseUplinkBOBERTRiot
+    underwearb: ADTClothingUnderwearBottomBriefsWhite
+    underweart: ADTClothingUnderwearTopTShirt
+    socks: ADTClothingUnderwearSocksComfyGrey
+    suitstorage: JetpackBlackFilled
+  storage:
+    back:
+    - ADTMedkitAdvancedERT
+    - FoodSnackNutribrick
+    - FoodSnackNutribrick
+    - DrinkWaterBottleFull
+    - DrinkWaterBottleFull
+    - PinpointerNuclear
+    - SpaceCash1000
+    - CombatKnife
+    - ADTMedkitERTFilled
+    - HandheldCrewMonitor
+    - DefibrillatorCompact
+    - BoxHandcuff
+    - CrowbarGreen
+
+#Janitor
+
+- type: startingGear
+  id: ADTERTJanitorGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitERTJanitor
+    back: ClothingBackpackERTJanitor
+    shoes: ClothingShoesGaloshes
+    head: ClothingHeadHelmetERTJanitor
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterArmorBasicSlim
+    id: ERTJanitorPDA
+    ears: ClothingHeadsetAltCentCom
+    belt: ADTClothingWarBeltJanitorERTFilled
+    pocket1: DoubleEmergencyOxygenTankFilled
+    pocket2: ADTBaseUplinkBOBERTJanitor
+    underwearb: ADTClothingUnderwearBottomBriefsWhite
+    underweart: ADTClothingUnderwearTopTShirt
+    socks: ADTClothingUnderwearSocksComfyGrey
+    suitstorage: JetpackBlackFilled
+  storage:
+    back:
+    - BoxLightMixed
+    - BoxLightMixed
+    - BoxLightMixed
+    - AdvMopItem
+    - FlashlightSeclite
+    - FoodSnackNutribrick
+    - FoodSnackNutribrick
+    - DrinkWaterBottleFull
+    - DrinkWaterBottleFull
+    - PinpointerNuclear
+    - SpaceCash1000
+    - CombatKnife
+    - ADTMedkitERTFilled
+    - CrowbarGreen
+
+- type: startingGear
+  id: ADTERTJanitorGearEVA
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitERTJanitor
+    back: ClothingBackpackERTJanitor
+    shoes: ADTClothingShoesBootsMagERT
+    mask: ClothingMaskGasERT
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterHardsuitERTJanitor
+    id: ERTJanitorPDA
+    ears: ClothingHeadsetAltCentCom
+    belt: ADTClothingWarBeltJanitorERTFilled
+    pocket1: DoubleEmergencyOxygenTankFilled
+    pocket2: ADTBaseUplinkBOBERTJanitor
+    underwearb: ADTClothingUnderwearBottomBriefsWhite
+    underweart: ADTClothingUnderwearTopTShirt
+    socks: ADTClothingUnderwearSocksComfyGrey
+    suitstorage: JetpackBlackFilled
+  storage:
+    back:
+    - BoxLightMixed
+    - BoxLightMixed
+    - BoxLightMixed
+    - AdvMopItem
+    - FlashlightSeclite
+    - FoodSnackNutribrick
+    - FoodSnackNutribrick
+    - DrinkWaterBottleFull
+    - DrinkWaterBottleFull
+    - PinpointerNuclear
+    - SpaceCash1000
+    - CombatKnife
+    - ADTMedkitERTFilled
+    - CrowbarGreen
+
+- type: startingGear
+  id: ADTERTJanitorGearEVARiot
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitERTJanitor
+    back: ClothingBackpackERTJanitor
+    shoes: ClothingShoesBootsCombat
+    mask: ClothingMaskGasERT
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ADTClothingOuterERTRiotHardsuit
+    id: ERTJanitorPDA
+    ears: ClothingHeadsetAltCentCom
+    belt: ADTClothingWarBeltJanitorERTFilled
+    pocket1: DoubleEmergencyOxygenTankFilled
+    pocket2: ADTBaseUplinkBOBERTJanitor
+    underwearb: ADTClothingUnderwearBottomBriefsWhite
+    underweart: ADTClothingUnderwearTopTShirt
+    socks: ADTClothingUnderwearSocksComfyGrey
+    suitstorage: JetpackBlackFilled
+  storage:
+    back:
+    - BoxLightMixed
+    - BoxLightMixed
+    - BoxLightMixed
+    - AdvMopItem
+    - FlashlightSeclite
+    - FoodSnackNutribrick
+    - FoodSnackNutribrick
+    - DrinkWaterBottleFull
+    - DrinkWaterBottleFull
+    - PinpointerNuclear
+    - SpaceCash1000
+    - CombatKnife
+    - ADTMedkitERTFilled
+    - CrowbarGreen

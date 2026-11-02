@@ -1,0 +1,12 @@
+ent-SpeechStatusEffectBase = { ent-MobStatusEffectDebuff }
+    .desc = { ent-MobStatusEffectDebuff.desc }
+ent-StatusEffectStutter = заикание
+    .desc = { ent-SpeechStatusEffectBase.desc }
+ent-StatusEffectSlurred = невнятность
+    .desc = { ent-SpeechStatusEffectBase.desc }
+ent-StatusEffectScrambled = неразборчивость
+    .desc = { ent-SpeechStatusEffectBase.desc }
+ent-StatusEffectAllCaps = акцент капслока
+ent-StatusEffectBark = лающий акцент
+ent-StatusEffectOwO = OwO-акцент
+ent-StatusEffectRatvarianLanguage = ратварианская речь

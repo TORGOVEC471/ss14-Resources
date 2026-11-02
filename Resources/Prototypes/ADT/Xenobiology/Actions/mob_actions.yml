@@ -1,0 +1,25 @@
+- type: entity
+  parent: BaseAction
+  id: ActionSlimeLatch
+  name: Latch
+  description: Latch onto a target and begin digesting it! Or get off of an existing one if you're already latched onto something.
+  components:
+  - type: Action
+    itemIconStyle: NoItem
+    useDelay: 3
+  - type: Sprite
+    sprite: ADT/Xenobiology/Actions/actions_slime.rsi
+    layers:
+    - state: slimeeat
+  - type: TargetAction
+    range: 1
+  - type: EntityTargetAction
+    whitelist:
+      components:
+      - MobState
+      - Body
+    blacklist:
+      components:
+      - Slime
+    canTargetSelf: false
+    event: !type:SlimeLatchEvent {}

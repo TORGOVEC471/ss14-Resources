@@ -1,0 +1,23 @@
+- type: entityTable
+  id: ADTMusicDiskMaintenance
+  table: !type:GroupSelector
+    children:
+    - !type:GroupSelector
+      weight: 95
+      children:
+      - id: ADTMusicDiskRandom
+    - !type:GroupSelector
+      weight: 5
+      children:
+      - id: ADTMusicDiskStandard
+      - id: ADTMusicDiskChill
+
+- type: entityTable
+  id: ADTMusicDiskSalvage
+  table: !type:GroupSelector
+    children:
+    - !type:GroupSelector
+      weight: 30
+      children:
+      - id: ADTMusicDiskStandard
+      - id: ADTMusicDiskChill

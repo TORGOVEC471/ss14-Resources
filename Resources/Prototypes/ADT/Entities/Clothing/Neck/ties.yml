@@ -1,0 +1,282 @@
+- type: entity
+  parent: ClothingNeckBase
+  id: ADTClothingNeckWhiteTie
+  name: white tie
+  description: Just a tie.
+  components:
+    - type: Sprite
+      sprite: ADT/Clothing/Neck/Ties/white_tie.rsi
+    - type: Clothing
+      sprite: ADT/Clothing/Neck/Ties/white_tie.rsi
+    - type: StaticPrice
+      price: 18
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ADTClothingNeckBlueTie
+  name: blue tie
+  description: Have a CEO MINDSET
+  components:
+    - type: Sprite
+      sprite: ADT/Clothing/Neck/Ties/blue_tie.rsi
+    - type: Clothing
+      sprite: ADT/Clothing/Neck/Ties/blue_tie.rsi #спрайты от prazat911
+    - type: StaticPrice
+      price: 65
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ADTClothingNeckAquamarineTie
+  name: aquamarine tie
+  description: Just a tie.
+  components:
+    - type: Sprite
+      sprite: ADT/Clothing/Neck/Ties/aquamarine_tie.rsi
+    - type: Clothing
+      sprite: ADT/Clothing/Neck/Ties/aquamarine_tie.rsi
+    - type: StaticPrice
+      price: 18
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ADTClothingNeckAzureTie
+  name: azure tie
+  description: Just a tie.
+  components:
+    - type: Sprite
+      sprite: ADT/Clothing/Neck/Ties/azure_tie.rsi
+    - type: Clothing
+      sprite: ADT/Clothing/Neck/Ties/azure_tie.rsi
+    - type: StaticPrice
+      price: 18
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ADTClothingNeckBlackTie
+  name: black tie
+  description: Just a tie.
+  components:
+    - type: Sprite
+      sprite: ADT/Clothing/Neck/Ties/black_tie.rsi
+    - type: Clothing
+      sprite: ADT/Clothing/Neck/Ties/black_tie.rsi
+    - type: StaticPrice
+      price: 18
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ADTClothingNeckBrownTie
+  name: brown tie
+  description: Just a tie.
+  components:
+    - type: Sprite
+      sprite: ADT/Clothing/Neck/Ties/brown_tie.rsi
+    - type: Clothing
+      sprite: ADT/Clothing/Neck/Ties/brown_tie.rsi
+    - type: StaticPrice
+      price: 18
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ADTClothingNeckDarkBlueTie
+  name: dark blue tie
+  description: Just a tie.
+  components:
+    - type: Sprite
+      sprite: ADT/Clothing/Neck/Ties/darkblue_tie.rsi
+    - type: Clothing
+      sprite: ADT/Clothing/Neck/Ties/darkblue_tie.rsi
+    - type: StaticPrice
+      price: 18
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ADTClothingNeckGreenTie
+  name: green tie
+  description: Just a tie.
+  components:
+    - type: Sprite
+      sprite: ADT/Clothing/Neck/Ties/green_tie.rsi
+    - type: Clothing
+      sprite: ADT/Clothing/Neck/Ties/green_tie.rsi
+    - type: StaticPrice
+      price: 18
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ADTClothingNeckGreyTie
+  name: grey tie
+  description: Just a tie.
+  components:
+    - type: Sprite
+      sprite: ADT/Clothing/Neck/Ties/grey_tie.rsi
+    - type: Clothing
+      sprite: ADT/Clothing/Neck/Ties/grey_tie.rsi
+    - type: StaticPrice
+      price: 18
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ADTClothingNeckOrangeTie
+  name: orange tie
+  description: Just a tie.
+  components:
+    - type: Sprite
+      sprite: ADT/Clothing/Neck/Ties/orange_tie.rsi
+    - type: Clothing
+      sprite: ADT/Clothing/Neck/Ties/orange_tie.rsi
+    - type: StaticPrice
+      price: 18
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ADTClothingNeckPinkTie
+  name: pink tie
+  description: Just a tie.
+  components:
+    - type: Sprite
+      sprite: ADT/Clothing/Neck/Ties/pink_tie.rsi
+    - type: Clothing
+      sprite: ADT/Clothing/Neck/Ties/pink_tie.rsi
+    - type: StaticPrice
+      price: 18
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ADTClothingNeckPurpleTie
+  name: purple tie
+  description: Just a tie.
+  components:
+    - type: Sprite
+      sprite: ADT/Clothing/Neck/Ties/purple_tie.rsi
+    - type: Clothing
+      sprite: ADT/Clothing/Neck/Ties/purple_tie.rsi
+    - type: StaticPrice
+      price: 18
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ADTClothingNeckRedTie
+  name: red tie
+  description: Just a tie.
+  components:
+    - type: Sprite
+      sprite: ADT/Clothing/Neck/Ties/red_tie.rsi
+    - type: Clothing
+      sprite: ADT/Clothing/Neck/Ties/red_tie.rsi
+    - type: StaticPrice
+      price: 18
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ADTClothingNeckYellowTie
+  name: yellow tie
+  description: Just a tie.
+  components:
+    - type: Sprite
+      sprite: ADT/Clothing/Neck/Ties/yellow_tie.rsi
+    - type: Clothing
+      sprite: ADT/Clothing/Neck/Ties/yellow_tie.rsi
+    - type: StaticPrice
+      price: 18
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ADTClothingNeckGoldTie
+  name: golden tie
+  description: Expencive.
+  components:
+    - type: Sprite
+      sprite: ADT/Clothing/Neck/Ties/gold_tie.rsi
+    - type: Clothing
+      sprite: ADT/Clothing/Neck/Ties/gold_tie.rsi #спрайты от prazat911
+    - type: StaticPrice
+      price: 75
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ADTClothingNeckDarkGreenTie
+  name: dark green tie
+  description: Just a tie.
+  components:
+    - type: Sprite
+      sprite: ADT/Clothing/Neck/Ties/darkgreen_tie.rsi
+    - type: Clothing
+      sprite: ADT/Clothing/Neck/Ties/darkgreen_tie.rsi
+    - type: StaticPrice
+      price: 18
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ADTClothingNeckLightPurpleTie
+  name: light purple tie
+  description: Just a tie.
+  components:
+    - type: Sprite
+      sprite: ADT/Clothing/Neck/Ties/lightpurple_tie.rsi
+    - type: Clothing
+      sprite: ADT/Clothing/Neck/Ties/lightpurple_tie.rsi
+    - type: StaticPrice
+      price: 18
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ADTClothingNeckMalineTie
+  name: maline tie
+  description: Just a tie.
+  components:
+    - type: Sprite
+      sprite: ADT/Clothing/Neck/Ties/maline_tie.rsi
+    - type: Clothing
+      sprite: ADT/Clothing/Neck/Ties/maline_tie.rsi
+    - type: StaticPrice
+      price: 18
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ADTClothingNeckBowtieBlack
+  name: black bowtie
+  description: A regular bowtie, ideal for office workers.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Neck/Bowtie/black_bowtie.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Neck/Bowtie/black_bowtie.rsi
+  - type: StaticPrice
+    price: 20
+- type: entity
+  parent: ClothingNeckBase
+  id: ADTClothingNeckBowtieBlue
+  name: blue bowtie
+  description: A regular bowtie, ideal for office workers.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Neck/Bowtie/blue_bowtie.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Neck/Bowtie/blue_bowtie.rsi
+  - type: StaticPrice
+    price: 20
+- type: entity
+  parent: ClothingNeckBase
+  id: ADTClothingNeckBowtieRed
+  name: red bowtie
+  description: A regular bowtie, ideal for office workers.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Neck/Bowtie/red_bowtie.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Neck/Bowtie/red_bowtie.rsi
+  - type: StaticPrice
+    price: 20
+- type: entity
+  parent: ClothingNeckBase
+  id: ADTClothingNeckBowtieWhite
+  name: white bowtie
+  description: A regular bowtie, ideal for office workers.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Neck/Bowtie/white_bowtie.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Neck/Bowtie/white_bowtie.rsi
+  - type: StaticPrice
+    price: 20

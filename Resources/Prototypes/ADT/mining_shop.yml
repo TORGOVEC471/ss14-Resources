@@ -1,0 +1,197 @@
+- type: miningShopSection
+  id: Crushers
+  name: ПКК
+  entries:
+#  - id: WeaponCrusherDagger
+#    price: 660
+  - id: WeaponCrusher
+    price: 900
+  - id: WeaponKineticSpear
+    price: 1800
+  - id: WeaponKineticHammer
+    price: 1500
+  - id: WeaponKineticClaws
+    price: 1500
+  - id: WeaponKineticMachete
+    price: 1260
+
+- type: miningShopSection
+  id: KA
+  name: ПКА
+  entries:
+  - id: WeaponProtoKineticAccelerator
+    price: 900
+  - id: ADTWeaponProtoKineticShotgun
+    price: 3400
+
+- type: miningShopSection
+  id: Motion
+  name: Выживание
+  entries:
+  - id: ADTGpsMining
+    price: 250
+  - id: FultonBeacon
+    price: 1200
+  - id: Fulton
+    price: 2100
+  - id: ADTJaunter
+    price: 900
+  - id: WeaponGrapplingGun
+    price: 900
+  - id: ADTShelterCapsule
+    price: 600
+  - id: ADTShelterCapsuleLuxury
+    price: 4200
+  - id: ADTShelterCapsuleBar
+    price: 9000
+  - id: ADTShelterCapsuleLivingRoom
+    price: 12000
+
+- type: miningShopSection
+  id: Medicine
+  name: Медицина
+  entries:
+  - id: SpaceMedipen
+    price: 360
+  - id: EmergencyMedipen
+    price: 360
+  - id: BruteAutoInjector
+    price: 720
+  - id: BurnAutoInjector
+    price: 720
+  - id: MedkitBruteFilled
+    price: 1080
+  - id: MedkitBurnFilled
+    price: 960
+  - id: MedkitToxinFilled
+    price: 1200
+  - id: ADTPatchPackFilled
+    price: 480
+  - id: ADTStabilizingSerum
+    price: 360
+  - id: ADTSurvivalMedipen
+    price: 720
+  - id: ADTStabilizationMedipen
+    price: 1080
+  - id: ADTHyperMedipen
+    price: 2400
+
+- type: miningShopSection
+  id: EquipmentWearable
+  name: Снаряжение
+  entries:
+  - id: ClothingMaskGasExplorer
+    price: 210
+  - id: ClothingBeltSalvageWebbing
+    price: 600
+  - id: OreBag
+    price: 420
+  - id: ADTAdvancedOreBag
+    price: 1020
+#  - id: OreBagOfHolding
+#    price: 3600
+  - id: ADTClothingOuterArmorMiner
+    price: 1200
+#  - id: ADTClothingOuterArmorMinerHeavy
+#    price: 4320
+#  - id: ADTClothingOuterArmorMinerLight
+#    price: 4800
+  - id: ADTClothingJumpBoots
+    price: 1800
+  - id: ClothingOuterHardsuitSpatio
+    price: 1200
+  - id: ClothingOuterHardsuitSalvage
+    price: 3000
+  - id: ADTClothingModsuitBackMining
+    price: 3000
+
+- type: miningShopSection
+  id: EquipmentHand
+  name: Раскопки
+  entries:
+  - id: Flare
+    price: 90
+  - id: Pickaxe
+    price: 150
+  - id: MiningDrill
+    price: 600
+  # - id: SeismicCharge временно в ауте
+  #   price: 240
+  - id: FireExtinguisherMini
+    price: 180
+  - id: ADTWeaponCutter
+    price: 2400
+  - id: ADTResonator
+    price: 960
+  - id: ADTResonatorUpgraded
+    price: 2400
+  - id: PowerCellHigh
+    price: 780
+  - id: Binoculars
+    price: 540
+  - id: ADTModsuitModDrill
+    price: 1200
+  - id: ADTModsuitModStorageLarge
+    price: 600
+
+- type: miningShopSection
+  id: Upgrades
+  name: Улучшения
+  entries:
+  - id: PKAUpgradeDamage
+    price: 900
+  - id: PKAUpgradeRange
+    price: 420
+  - id: PKAUpgradeFireRate
+    price: 600
+#  - id: PKAUpgradeLight #Fix That and then we will uncoment this
+#    price: 600
+  - id: ADTPKAUpgradeMiningExplosion
+    price: 1800
+  - id: ADTPKAUpgradeOffensiveMiningExplosion
+    price: 2700
+  - id: ADTPKAUpgradeOffensiveExplosion
+    price: 2100
+  - id: ADTPKAUpgradeRapidRepeater
+    price: 3000
+  - id: ADTPKAUpgradeDeathSyphon
+    price: 3300
+  - id: ADTPKAUpgradeIndoors
+    price: 2400
+  - id: ADTPKAUpgradeResonatorBlast
+    price: 2700
+  - id: ADTPKAUpgradeTracerWhite
+    price: 300
+  - id: ADTPKAUpgradeTracerAdjustable
+    price: 600
+  - id: ADTPKAUpgradeChassisSuper
+    price: 300
+  - id: ADTPKAUpgradeChassisHyper
+    price: 300
+
+- type: miningShopSection
+  id: Fun
+  name: Безделушки
+  entries:
+  - id: PlushieLizard
+    price: 264 # CURSE
+  - id: SpaceCash1000
+    price: 3000
+  - id: DrinkWhiskeyBottleFull
+    price: 120
+  - id: DrinkAbsintheBottleFull
+    price: 180
+  - id: BoxMRE
+    price: 420
+  - id: ADTFunPokerBox
+    price: 600
+  - id: ChessBoard
+    price: 480
+  - id: CheckerBoard
+    price: 480
+  - id: SoapNT
+    price: 480
+  - id: Cigar
+    price: 360
+  - id: CigarGoldCase
+    price: 1200

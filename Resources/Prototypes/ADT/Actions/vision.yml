@@ -1,0 +1,59 @@
+- type: entity
+  id: ADTActionToggleNightVision
+  categories: [HideSpawnMenu]
+  name: Toggle nightvision
+  description: Allows you to see even in complete darkness.
+  components:
+  - type: Action
+    itemIconStyle: BigAction
+    useDelay: 0.25
+  - type: Sprite
+    sprite: ADT/Interface/Actions/nightvision.rsi
+    layers:
+    - state: icon_on
+      map: ["enum.ActionVisuals.Icon"]
+    - state: icon_off
+      map: ["enum.ActionVisuals.IconToggled"]
+      visible: false
+  - type: InstantAction
+    event: !type:ToggleNightVisionActionEvent
+
+- type: entity
+  id: ActionToggleThermalVision
+  categories: [HideSpawnMenu]
+  name: Toggle thermalvision
+  description: Allows you to see even in complete darkness.
+  components:
+  - type: Action
+    itemIconStyle: BigAction
+    useDelay: 0.25
+  - type: Sprite
+    sprite: ADT/Interface/Actions/thermalvision.rsi
+    layers:
+    - state: icon_on
+      map: ["enum.ActionVisuals.Icon"]
+    - state: icon_off
+      map: ["enum.ActionVisuals.IconToggled"]
+      visible: false
+  - type: InstantAction
+    event: !type:ToggleThermalVisionActionEvent
+
+- type: entity
+  id: ActionToggleMesonVision
+  categories: [HideSpawnMenu]
+  name: Toggle mesonvision
+  description: Allows you to see even in complete darkness.
+  components:
+  - type: Action
+    itemIconStyle: BigAction
+    useDelay: 0.25
+  - type: Sprite
+    sprite: ADT/Interface/Actions/mesonvision.rsi
+    layers:
+    - state: icon_on
+      map: ["enum.ActionVisuals.Icon"]
+    - state: icon_off
+      map: ["enum.ActionVisuals.IconToggled"]
+      visible: false
+  - type: InstantAction
+    event: !type:ToggleMesonActionEvent

@@ -1,0 +1,18 @@
+- type: vendingMachineInventory
+  id: ADTBarberdrobeInventory
+  startingInventory:
+    ADTVendingCategoryUniforms: # ADT-Tweak
+        ADTClothingUniformJumpsuitBarber: 3
+        ADTClothingUniformJumpsuitBarberBrown: 3
+        ADTClothingUniformJumpskirtBarber: 3
+        ADTClothingUniformJumpskirtBarberBrown: 3
+    ADTVendingCategoryOuter: # ADT-Tweak
+        ADTClothingOuterApronBarber: 2
+    ADTVendingCategoryShoes: # ADT-Tweak
+        ClothingShoesColorBlack: 2
+        ClothingShoesBootsLaceup: 2
+    ADTVendingCategoryHead: # ADT-Tweak
+        ClothingHeadBandBlack: 1
+    ADTVendingCategoryAccessories: # ADT-Tweak
+        ClothingHeadsetService: 2
+        ClothingHandsGlovesColorBlack: 2

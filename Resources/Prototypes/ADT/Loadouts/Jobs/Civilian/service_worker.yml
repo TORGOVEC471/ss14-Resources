@@ -1,0 +1,22 @@
+# PDA
+
+- type: loadout
+  id: ADTServiceWorkerPDA
+  equipment:
+    id: ServiceWorkerPDA
+
+- type: loadout
+  id: ADTWaiterPDA
+  equipment:
+    id: ADTWaiterPDA
+
+# Pizza Delivery
+- type: loadout
+  id: ADTClothingUniformJumpsuitPizzaDelivery
+  equipment:
+    jumpsuit: ADTClothingUniformJumpsuitPizzaDelivery
+
+- type: loadout
+  id: ADTClothingHeadVisorPizza
+  equipment:
+    head: ADTClothingHeadVisorPizza

@@ -1,0 +1,36 @@
+- type: microwaveMealRecipe
+  id: RecipeAloeCream
+  name: recipe-aloe-cream # ADT Tweak
+  result: AloeCream
+  time: 10
+  group: Medicinal
+  solids:
+    FoodAloe: 1
+
+- type: microwaveMealRecipe
+  id: RecipeMedicatedSuture
+  name: recipe-medicated-suture # ADT Tweak
+  result: MedicatedSuture
+  time: 10
+  group: Medicinal
+  solids:
+    FoodPoppy: 1
+    Brutepack: 1
+    MaterialCloth1: 1
+  reagents:
+    TranexamicAcid: 20
+    Cryptobiolin: 20
+
+- type: microwaveMealRecipe
+  id: RecipeRegenerativeMesh
+  name: recipe-regenerative-mesh # ADT Tweak
+  result: RegenerativeMesh
+  time: 10
+  group: Medicinal
+  solids:
+    FoodAloe: 1
+    Ointment: 1
+    MaterialCloth1: 1
+  reagents:
+    Sigynate: 20
+    Dermaline: 20

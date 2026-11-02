@@ -1,0 +1,73 @@
+- type: entity
+  id: PurpleSlimeExtract
+  parent: BaseSlimeExtract
+  name: purple slime extract
+  components:
+  - type: Sprite
+    layers:
+    - sprite: ADT/Xenobiology/Specific/Xenobiology/extract.rsi
+      state: core
+      color: "#BF77F6"
+  - type: SlimeExtract
+    extractReactions:
+    - PurpleSlimeExtractWaterReaction
+    - PurpleSlimeExtractPlasmaReaction
+    - PurpleSlimeExtractBloodReaction
+  - type: Tag
+    tags:
+    - XenobiologyPurpleExtract
+
+- type: extractReaction
+  id: PurpleSlimeExtractWaterReaction
+  requirements:
+    Water: 1
+  effects:
+  - effect: !type:PopupMessage
+      type: Pvs
+      messages: [ "xeno-extract-reaction" ]
+    scalingOffset: 0
+  - effect: !type:PlaySoundEffect
+      sound: /Audio/Effects/Chemistry/bubbles.ogg
+    scalingOffset: 0
+  - effect: !type:CreateRQuantityEntityReactionEffect
+      entity: ArtifactFragment1
+      maxEntities: 4
+    scalingOffset: 1
+  shouldDelete: false
+
+- type: extractReaction
+  id: PurpleSlimeExtractPlasmaReaction
+  requirements:
+    Plasma: 15
+  effects:
+  - effect: !type:PopupMessage
+      type: Pvs
+      messages: [ "xeno-extract-reaction-reagent" ]
+    scalingOffset: 0
+  - effect: !type:PlaySoundEffect
+      sound: /Audio/Effects/Chemistry/bubbles.ogg
+    scalingOffset: 0
+  - effect: !type:CreateEntityReactionEffect
+      entity: SlimeSteroidPotion
+      number: 1
+    scalingOffset: 1
+  shouldDelete: false
+
+- type: extractReaction
+  id: PurpleSlimeExtractBloodReaction
+  requirements:
+    Blood: 1
+  effects:
+  - effect: !type:PopupMessage
+      type: Pvs
+      messages: [ "xeno-extract-reaction-reagent" ]
+    scalingOffset: 0
+  - effect: !type:PlaySoundEffect
+      sound: /Audio/Effects/Chemistry/bubbles.ogg
+    scalingOffset: 0
+  - effect: !type:AddReagentToSolution
+      reagent: Omnizine
+      solution: extract
+    scalingFactor: 1
+    scalingOffset: 0
+  shouldDelete: false

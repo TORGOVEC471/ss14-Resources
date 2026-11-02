@@ -1,0 +1,171 @@
+- type: department
+  id: Cargo
+  name: department-Cargo
+  description: department-Cargo-description
+  color: "#8B5005" # ADT-Tweak
+  weight: -5 # ADT EDIT
+  roles:
+  - CargoTechnician
+  - Quartermaster
+  - ADTMiner # ADT tweak
+  - SalvageSpecialist
+
+- type: department
+  id: Civilian
+  name: department-Civilian
+  description: department-Civilian-description
+  color: "#8AD44A" # ADT-Tweak
+  weight: -4 # ADT EDIT
+  roles:
+  - Bartender
+  - Botanist
+  - Chaplain
+  - Chef
+  - Clown
+  - HeadOfPersonnel
+  - Janitor
+  - Librarian
+  - Mime
+  - Musician
+  - Passenger
+  - Reporter
+  - Visitor
+  - ServiceWorker
+  - ADTBarber # ADT-Tweak
+
+# Please kill this
+- type: department
+  id: CentralCommand
+  name: department-CentralCommand
+  description: department-CentralCommand-description
+  color: "#0c344d"
+  weight: -1 # ADT EDIT
+  roles:
+  - CentralCommandOfficial
+  - CBURN
+  - ERTLeader
+  - ERTChaplain
+  - ERTJanitor
+  - ERTMedical
+  - ERTSecurity
+  - ERTEngineer
+  - DeathSquad
+  editorHidden: true
+
+- type: department
+  id: Command
+  name: department-Command
+  description: department-Command-description
+  color: "#334E6D"
+  weight: -2 # ADT EDIT
+  roles:
+  - Captain
+  # ADT-Tweak
+  - ADTCentcomConsultant
+  - Magistrat
+  # ADT-Tweak
+  - IAA # Corvax-IAA
+  - ChiefEngineer
+  - ChiefMedicalOfficer
+  - HeadOfPersonnel
+  - HeadOfSecurity
+  - ResearchDirector
+  - Quartermaster
+  # - CentralCommandOfficial втф ADT
+  # - CBURN
+  # - ERTLeader
+  # - ERTChaplain
+  # - ERTJanitor
+  # - ERTMedical
+  # - ERTSecurity
+  # - ERTEngineer
+  # - DeathSquad
+  primary: false
+
+- type: department
+  id: Engineering
+  name: department-Engineering
+  description: department-Engineering-description
+  color: "#D99A30" # ADT-Tweak
+  weight: -6 # ADT EDIT
+  roles:
+  - AtmosphericTechnician
+  - ChiefEngineer
+  - StationEngineer
+  - TechnicalAssistant
+  - ADTSeniorEngineer # ADT-Tweak
+
+- type: department
+  id: Medical
+  name: department-Medical
+  description: department-Medical-description
+  color: "#3FA0D6" # ADT-Tweak
+  weight: -7 # ADT EDIT
+  roles:
+  - Chemist
+  - ChiefMedicalOfficer
+  - MedicalDoctor
+  - MedicalIntern
+  - Psychologist
+  - Paramedic
+  # ADT-Tweak
+  - ADTPathologist
+  - ADTSeniorPhysician
+  # ADT-Tweak
+
+- type: department
+  id: Security
+  name: department-Security
+  description: department-Security-description
+  color: "#C42D2D" # ADT-Tweak
+  weight: -3 # ADT EDIT
+  roles:
+  - HeadOfSecurity
+  - SecurityCadet
+  - SecurityOfficer
+  # - Pilot # Corvax-Pilot
+  - Detective
+  - Warden
+  # ADT-Tweak
+  - Brigmedic
+  - ADTSeniorOfficer
+  - ADTCorrectionsOfficer
+  # ADT-Tweak
+
+- type: department
+  id: Science
+  name: department-Science
+  description: department-Science-description
+  color: "#B86EAA" # ADT-Tweak
+  weight: -8 # ADT EDIT
+  roles:
+  - ResearchDirector
+  - Scientist
+  - ResearchAssistant
+  # ADT-Tweak
+  - ADTRoboticist
+  - ADTSeniorResearcher
+  # ADT-Tweak
+
+- type: department
+  id: Silicon
+  name: department-Silicon
+  description: department-Silicon-description
+  color: "#B86EAA" # ADT-Tweak
+  weight: -9 # ADT EDIT
+  roles:
+  - Borg
+  - StationAi
+
+- type: department
+  id: Specific
+  name: department-Specific
+  description: department-Specific-description
+  color: "#29282f"
+  weight: -10 # ADT EDIT
+  roles:
+  - Reporter
+  - Psychologist
+  # - Pilot # Corvax-Pilot
+  - ADTBarber # ADT-Tweak
+  primary: false

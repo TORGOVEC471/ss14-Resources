@@ -1,0 +1,61 @@
+- type: latheRecipePack
+  id: ADTMedicalMiscStaticPack
+  recipes:
+  - ADTAntibioticOintment
+  - ADTBloodPackTransfusionLatheRecipe
+  - ADTSmallSyringe
+  - ADTPillCanister
+  - ADTPillPack
+  - ADTPlasticBottle
+  - ADTMedicalSprayBottle
+  - ADTAutoSurgeon
+
+- type: latheRecipePack
+  id: ADTAdvancedMedicalMiscPack
+  recipes:
+  - ADTHighVoltageDefibrillator
+  - ADTReagentAnalyzer
+  - ClothingEyesGlassesChemical
+
+- type: latheRecipePack
+  id: ADTAdvancedMedicalCarePack
+  recipes:
+  - ADTLauncherSyringe
+  - ADTMiniSyringe
+  - ADTTourniquet
+  - ADTPatchLepo
+  
+- type: latheRecipePack
+  id: ADTAdvancedMedical
+  recipes:
+  - ADTAdvancedMedicalBedCircuitboard
+
+- type: latheRecipePack
+  id: ADTCryoPodMachineCircuitboard
+  recipes:
+  - CryoPodMachineCircuitboard
+
+- type: latheRecipePack
+  id: ADTChemDisp
+  recipes:
+#  - ChemDispenserMachineCircuitboard
+  - ChemMasterMachineCircuitboard
+  - HotplateMachineCircuitboard
+  - ADTColdplateMachineCircuitboard
+
+- type: latheRecipePack
+  id: ADTCryoTech
+  recipes:
+  - ADTPatchCryo
+  - CryostasisBeaker
+  - SyringeCryostasis
+
+- type: latheRecipePack
+  id: ADTThermoTech
+  recipes:
+  - ADTPatchThermo
+
+- type: latheRecipePack
+  id: ADTMedbeamPack
+  recipes:
+  - ADTWeaponMedbeamCivil

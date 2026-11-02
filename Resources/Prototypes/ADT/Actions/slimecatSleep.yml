@@ -1,0 +1,13 @@
+- type: entity
+  id: ADTActionSlimeCatsSleep
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Action
+    itemIconStyle: BigAction
+    useDelay: 1
+  - type: Sprite
+    sprite: ADT/Mobs/slug-cat.rsi
+    layers:
+    - state: rest-rivulet
+  - type: InstantAction
+    event: !type:SharedSlimeCatSleepActionEvent

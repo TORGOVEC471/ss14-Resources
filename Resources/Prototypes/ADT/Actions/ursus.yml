@@ -1,0 +1,15 @@
+- type: entity
+  id: ActionUrsusSleep
+  name: Sleep
+  description: Go to sleep.
+  components:
+  - type: InstantAction
+    event: !type:UrsusSleepEvent
+  - type: Action
+    itemIconStyle: BigAction
+    checkCanInteract: false
+    useDelay: 90 # equip noise spam.
+  - type: Sprite
+    sprite: Clothing/Head/Hats/pyjamasyndicateblack.rsi
+    layers:
+    - state: icon

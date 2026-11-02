@@ -1,0 +1,32 @@
+- type: entity
+  name: hypospray brigmedic
+  parent: BaseItem
+  description: Sterile injector for rapid administration of medications to prisoners and security personnel.
+  id: HyposprayBrigmedic
+  components:
+  - type: Sprite
+    sprite: Corvax/Objects/Specific/Medical/brigmedichypo.rsi
+    state: hypo
+  - type: Item
+    sprite: Corvax/Objects/Specific/Medical/brigmedichypo.rsi
+  - type: Solution
+    id: hypospray
+    solution:
+      maxVol: 5
+      reagents: []
+  - type: RefillableSolution
+    solution: hypospray
+  - type: ExaminableSolution
+    solution: hypospray
+  - type: Injector
+    ignoreBlockers: true
+    # ADT-Tweak-Start
+    activeModeProtoId: ADTHyposprayDynamicMode
+    allowedModes:
+    - ADTHyposprayDynamicMode
+    - ADTHyposprayInjectMode
+    # ADT-Tweak-End
+  - type: UseDelay
+    delay: 2.5
+  - type: StaticPrice
+    price: 550

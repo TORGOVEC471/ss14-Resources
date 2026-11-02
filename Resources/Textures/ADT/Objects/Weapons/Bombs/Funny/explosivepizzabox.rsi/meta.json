@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from MOLOT-BlueMoon-Station https://github.com/BlueMoon-Labs/BlueMoon-Station-13 and modified by orange6775 (discord)",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "icon"
+    }
+  ]
+}

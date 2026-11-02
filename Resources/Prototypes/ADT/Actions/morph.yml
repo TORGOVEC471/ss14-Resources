@@ -1,0 +1,93 @@
+
+- type: entity
+  id: ActionMorphDevour
+  name: "[color=red]Devour[/color]"
+  description: Attempt to break a structure with your jaws or swallow a creature.
+  components:
+  - type: Action
+    itemIconStyle: BigAction
+    priority: 1
+  - type: Sprite
+    sprite: ADT/Interface/Actions/morph.rsi
+    layers:
+    - state: devour
+  - type: TargetAction
+  - type: EntityTargetAction
+    event: !type:MorphDevourActionEvent
+
+- type: entity
+  id: ActionMorphRemember
+  name: "[color=red]Remember[/color]"
+  description: Remember enrity to mimicry in future
+  components:
+  - type: Action
+    itemIconStyle: BigAction
+    priority: 2
+  - type: Sprite
+    sprite: ADT/Interface/Actions/morph.rsi
+    layers:
+    - state: remember
+  - type: TargetAction
+    checkCanAccess: false
+  - type: EntityTargetAction
+    event: !type:MorphMimicryRememberActionEvent
+
+- type: entity
+  id: ActionMorphReplication
+  name: "[color=red]Reproduce[/color]"
+  description: Create absolute copy of you.
+  components:
+  - type: Action
+    priority: 3
+    useDelay: 200
+  - type: Sprite
+    sprite: ADT/Interface/Actions/morph.rsi
+    layers:
+    - state: reproduce
+  - type: InstantAction
+    event: !type:MorphReproduceActionEvent
+
+- type: entity
+  id: ActionMorphMimicry
+  name: "[color=red]Mimicry[/color]"
+  description: Transform to an remembered entiry
+  components:
+  - type: Action
+    priority: 4
+  - type: Sprite
+    sprite: ADT/Interface/Actions/morph.rsi
+    layers:
+    - state: mimicry
+  - type: InstantAction
+    event: !type:MorphOpenRadialMenuEvent
+
+- type: entity
+  id: ActionMorphAmbush
+  name: "[color=red]Ambush[/color]"
+  description: Get ready to attack
+  components:
+  - type: Action
+    priority: 5
+    useDelay: 25
+  - type: Sprite
+    sprite: ADT/Interface/Actions/morph.rsi
+    layers:
+    - state: ambush
+  - type: InstantAction
+    event: !type:MorphAmbushActionEvent
+
+- type: entity
+  id: ActionMorphVentOpen
+  name: "[color=red]Axid[/color]"
+  description: Open vent for a price
+  components:
+  - type: Action
+    itemIconStyle: BigAction
+    priority: 6
+  - type: Sprite
+    sprite: ADT/Interface/Actions/morph.rsi
+    layers:
+    - state: devour
+  - type: TargetAction
+  - type: EntityTargetAction
+    event: !type:MorphVentOpenActionEvent

@@ -1,0 +1,12 @@
+- type: entity
+  id: BriefcaseIAAFilled
+  parent: BriefcaseBrown
+  suffix: IAA
+  components:
+    - type: EntityTableContainerFill
+      containers:
+        storagebase: !type:AllSelector
+          children:
+          - id: Paper
+          - id: PenCentcom
+          - id: RubberStampIAA

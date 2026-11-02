@@ -1,0 +1,41 @@
+﻿- type: entity
+  id: ADTLockerPathologistFilled
+  suffix: Filled
+  parent: ADTLockerPathologist
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: ClothingBackpackDuffelSurgeryFilled
+        - id: BoxFolderBlack
+        - id: Paper
+        - id: BoxBodyBag
+        - id: ClothingMaskSterile
+        - id: ADTRubberStampPathologist
+        - id: BriefcaseBrown
+- type: entity
+  id: ADTLockerParamedicFilledNoMod
+  suffix: Filled
+  parent: LockerParamedic
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: ADTClothingHeadHatsParamedicBeret
+        - id: ADTHighVoltageDefibrillator
+        - id: ClothingEyesHudMedical
+        - id: ClothingBeltMedicalEMTFilled
+        - id: ADTBloodPackTransfusionFull
+        - id: JetInjector
+        - id: HandheldHealthAnalyzer
+        - id: HandheldGPSBasic
+        - id: BoxBodyBag
+        - !type:GroupSelector
+          children:
+          - id: RollerBedSpawnFolded
+          - id: CheapRollerBedSpawnFolded
+          - id: EmergencyRollerBedSpawnFolded
+        - id: PlushieLizardJobParamedic
+          prob: 0.02

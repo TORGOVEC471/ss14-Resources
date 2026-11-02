@@ -1,0 +1,35 @@
+{
+    "version": 3,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Created by discord:prazat911, medal-trash, hematogen-trash sprited by orange6775 (discord)",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "choco-trash"
+        },
+        {
+            "name": "coconut-trash"
+        },
+        {
+            "name": "energy-trash"
+        },
+        {
+            "name": "nuts-trash"
+        },
+        {
+            "name": "pink-trash"
+        },
+        {
+            "name": "two-trash"
+        },
+        {
+            "name": "hematogen-trash"
+        },
+        {
+            "name": "medal-trash"
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+- type: localizedDataset
+  id: FigurinesOBS
+  values:
+    prefix: adt-figurines-BSO-
+    count: 15
+
+- type: localizedDataset
+  id: Figurinesbrigmedic
+  values:
+    prefix: adt-figurines-brigmedic-
+    count: 5
+
+- type: localizedDataset
+  id: FigurinesCCC
+  values:
+    prefix: adt-figurines-CCC-
+    count: 5

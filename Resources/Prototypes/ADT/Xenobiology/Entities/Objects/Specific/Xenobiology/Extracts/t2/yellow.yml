@@ -1,0 +1,70 @@
+- type: entity
+  id: YellowSlimeExtract
+  parent: BaseSlimeExtract
+  name: yellow slime extract
+  components:
+  - type: Sprite
+    layers:
+    - sprite: ADT/Xenobiology/Specific/Xenobiology/extract.rsi
+      state: core
+      color: "#ffff1a"
+  - type: SlimeExtract
+    extractReactions:
+    - YellowSlimeExtractWaterReaction
+    - YellowSlimeExtractPlasmaReaction
+    - YellowSlimeExtractBloodReaction
+  - type: Tag
+    tags:
+    - XenobiologyYellowExtract
+
+- type: extractReaction
+  id: YellowSlimeExtractWaterReaction
+  requirements:
+    Water: 1
+  effects:
+  - effect: !type:PopupMessage
+      type: Pvs
+      messages: [ "xeno-extract-reaction" ]
+    scalingOffset: 0
+  - effect: !type:PlaySoundEffect
+      sound: /Audio/Effects/Chemistry/bubbles.ogg
+    scalingOffset: 0
+  - effect: !type:CreateEntityReactionEffect
+      entity: YellowSlimeExtractLight
+      number: 1
+    scalingOffset: 1
+  shouldDelete: false
+
+- type: extractReaction
+  id: YellowSlimeExtractPlasmaReaction
+  requirements:
+    Plasma: 1
+  effects:
+  - effect: !type:PopupMessage
+      type: Pvs
+      messages: [ "xeno-extract-reaction" ]
+    scalingOffset: 0
+  - effect: !type:PlaySoundEffect
+      sound: /Audio/Effects/Chemistry/bubbles.ogg
+    scalingOffset: 0
+  - effect: !type:CreateEntityReactionEffect
+      entity: XenobioVolatileOrgan
+      number: 1
+    scalingOffset: 1
+  shouldDelete: false
+
+- type: extractReaction
+  id: YellowSlimeExtractBloodReaction
+  requirements:
+    Blood: 1
+  effects:
+  - effect: !type:PopupMessage
+      type: Pvs
+      messages: [ "xeno-extract-reaction" ]
+    scalingOffset: 0
+  - effect: !type:PlaySoundEffect
+      sound: /Audio/Effects/Chemistry/bubbles.ogg
+    scalingOffset: 0
+  - effect: !type:EmpReactionEffect
+    scalingOffset: 1
+  shouldDelete: false

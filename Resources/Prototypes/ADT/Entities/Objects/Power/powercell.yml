@@ -1,0 +1,55 @@
+- type: entity
+  name: revolver power cell
+  description: lasgun power sell
+  id: ADTPowerCellLasgunRevolver
+  parent: BaseItem
+  components:
+  - type: Battery
+    maxCharge: 600
+    startingCharge: 600
+  - type: Explosive
+    explosionType: Default
+    maxIntensity: 200
+    intensitySlope: 1.5
+  - type: Sprite
+    sprite: ADT/Objects/Weapons/Guns/Saber_revolvers/battery.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 4
+    zeroVisible: false
+  - type: SolutionManager
+    solutions:
+    - ADTPowerCellLasgunRevolverSolution
+  - type: InjectableSolution
+    solution: battery
+  - type: DrawableSolution
+    solution: battery
+  - type: Extractable
+    juiceSolution:
+      reagents:
+        - ReagentId: Zinc
+          Quantity: 5
+  - type: Tag
+    tags:
+      - ADTLasgunRevolverCell
+  - type: Appearance
+  - type: BatteryAmmoProvider
+    proto: ADTBulletLaserMK2
+    fireCost: 100
+  - type: PowerCell
+
+- type: entity
+  parent: Solution
+  id: ADTPowerCellLasgunRevolverSolution
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Solution
+    id: battery
+    solution:
+      maxVol: 5
+      reagents: []

@@ -1,0 +1,303 @@
+- type: entity
+  id: ADTMobLegion
+  parent: BaseMobAsteroid
+  name: legion
+  description: A truly alien creature, it is a mass of unknown organic material, constantly fluctuating. When attacking, pieces of it split off and attack in tandem with the original.
+  components:
+  - type: Sprite
+    sprite: ADT/Mobs/Aliens/Lavaland/legion.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: legion
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: legion
+      Dead:
+        Base: legion
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 2.5
+    baseSprintSpeed : 3.0
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      75: Dead
+  - type: MeleeWeapon
+    damage:
+      types:
+        Blunt: 15
+  - type: ADTLegion
+    corpseProto: ADTLegionCorpseSpawner
+  - type: ADTFlee
+    distance: 6
+  - type: NpcFactionMember
+    factions:
+    - SimpleHostile
+  - type: HTN
+    rootTask:
+      task: ADTLegionCompound
+    blackboard:
+      VisionRadius: !type:Single
+        5
+      AggroVisionRadius: !type:Single
+        5
+      ADTFleeRange: !type:Single
+        3
+  - type: Fauna
+  - type: AshStormImmune
+  - type: ADTMobLoot
+    loots:
+      ADTKineticTrophyLegionSkull: 0.1
+
+- type: entity
+  id: ADTMobLegionTendril
+  parent: ADTMobLegion
+  suffix: Tendril
+  components:
+  - type: ADTLegion
+    corpseProto: ADTHeliosRemainsCharred
+
+- type: entity
+  id: ADTMobLegionSkull
+  parent: [ BaseMobAsteroid, FlyingMobBase ]
+  name: legion skull
+  description: A fragment of the original hivelord, rallying behind its original. One isn't much of a threat, but...
+  components:
+  - type: Sprite
+    sprite: ADT/Mobs/Aliens/Lavaland/legion.rsi
+    layers:
+    - state: legion_skull
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.30
+        density: 40
+        mask:
+        - FlyingMobMask
+        layer:
+        - FlyingMobLayer
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 4.5
+    baseSprintSpeed : 5.0
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      5: Dead
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+    angle: 0
+    attackRate: 1.0
+    range: 0.75
+    animation: WeaponArcPunch
+    damage:
+      types:
+        Slash: 12
+  - type: ADTLegionSkull
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 5
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: NpcFactionMember
+    factions:
+    - SimpleHostile
+  - type: HTN
+    rootTask:
+      task: ADTLegionSkullCompound
+    blackboard:
+      VisionRadius: !type:Single
+        10
+      AggroVisionRadius: !type:Single
+        10
+  - type: TimedDespawn
+    lifetime: 10
+  - type: AshStormImmune
+
+- type: entity
+  id: MobAncientGoliath
+  parent: MobGoliath
+  name: ancient goliath
+  description: A massive beast that uses long tentacles to ensnare its prey, threatening them is not advised under any conditions.
+  components:
+  - type: Sprite
+    sprite: Mobs/Aliens/Asteroid/goliath.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: goliath
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: goliath
+      Dead:
+        Base: goliath_dead
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 1.00
+    baseSprintSpeed : 1.50
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      400: Dead
+  - type: MeleeWeapon
+    soundHit:
+      path: "/Audio/Weapons/smash.ogg"
+    angle: 0
+    attackRate: 0.75
+    animation: WeaponArcPunch
+    damage:
+      types:
+        Slash: 20
+        Piercing: 5
+  - type: NPCUseActionOnTarget
+    actions: AncientGoliathActions
+    delay: 3
+  - type: Destructible
+    thresholdsOverride:
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Blunt
+        damage: 800
+      behaviors:
+      - !type:GibBehavior { }
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Heat
+        damage: 3500
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawnInContainer: true
+        spawn:
+          Ash:
+            min: 1
+            max: 1
+      - !type:BurnBodyBehavior { }
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MeatLaserImpact
+  - type: ADTMobLoot
+    loots:
+      ADTKineticTrophyAncientGoliathTentacle: 0.1
+
+- type: weightedRandomEntity
+  id: AncientGoliathActions
+  weights:
+    ActionAncientGoliathTentacle: 0.5
+    ActionGoliathTentacle: 0.5
+
+#Crab
+- type: entity
+  id: ADTMobBSCrab
+  parent: MobOreCrab
+  name: Bluespace crab
+  description: A crab made half from the ashes of Lavaland storms, a quarter flesh, a quarter bluespace. Aggressive on look.
+  components:
+  - type: Sprite
+    sprite: ADT/Mobs/Elemental/orecrab.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: bs_crab
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: bs_crab
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 3.5
+    baseSprintSpeed : 4.0
+  - type: MeleeWeapon
+    damage:
+      types:
+        Blunt: 10
+  - type: NpcFactionMember
+    factions:
+    - SimpleHostile
+  - type: HTN
+    rootTask:
+      task: SimpleRangedHostileCompound
+    blackboard:
+      VisionRadius: !type:Single
+        5
+      AggroVisionRadius: !type:Single
+        11
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 40
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: GlassBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          ADTBSore1:
+            min: 1
+            max: 1
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: Fauna
+  - type: AshStormImmune
+  - type: Gun
+    fireRate: 0.33
+    selectedMode: SemiAuto
+    showExamineText: false
+    availableModes:
+    - SemiAuto
+    soundGunshot: null
+  - type: RechargeBasicEntityAmmo
+    showExamineText: false
+    rechargeCooldown: 0.8
+    rechargeSound: null
+  - type: BasicEntityAmmoProvider
+    proto: ADTBulletBS
+    capacity: 1
+    count: 1
+
+- type: entity
+  name: SimpleMobBaseLava
+  parent:
+  - SimpleSpaceMobBase
+  id: ADTSimpleMobBaselavaland # for lavaland
+  suffix: AI
+  abstract: true
+  components:
+  - type: Satiation
+    satiations:
+      Thirst:
+        prototype: SimpleMobBaseThirst
+  - type: Temperature
+    temperature: 310.15
+    specificHeat: 42
+  - type: StatusEffects
+    allowed:
+    - KnockedDown
+    - SlowedDown
+    - Stutter
+    - Weakness
+    - Electrocution
+    - ForcedSleep 
+    - Pacified
+    - StaminaModifier
+    - Drowsiness
+    - Adrenaline #ADT-Medicine
+  - type: MobPrice
+    price: 150
+  - type: FloatingVisuals
+  - type: Fauna
+  - type: ADTCleanRemains
+  - type: AshStormImmune
+  - type: Grabbable
+    escapeChanceMultiplier: 2.5
+    escapeAttemptCooldown: 1
+  - type: Flammable
+    fireSpread: false
+    canResistFire: false
+    alwaysCombustible: false
+    maximumFireStacks: 0
+    damage:
+      types:
+        Heat: 0

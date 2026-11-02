@@ -1,0 +1,25 @@
+- type: jukeboxList
+  id: Standard
+  jukeboxes:
+  - FlipFlap
+  - Tintin
+  - Thunderdome
+  - Constellations
+  - Drifting
+  - starlight
+  - sunset
+  - FSMTeamEagle
+  - GiftOfAdventureFromConjurer
+  - ESCPMidnightRoom
+  - ESCPNeonscapes
+  - TheFallOfTheCorporation
+  - WaitingForTheMeeting
+
+- type: jukeboxList
+  id: Chill
+  jukeboxes:
+  - ADTFNB
+  - ABeautifulLull
+  - ATenseAdventure
+  - HappyEnding
+  - lateraligator

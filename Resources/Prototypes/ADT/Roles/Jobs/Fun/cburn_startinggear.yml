@@ -1,0 +1,69 @@
+- type: startingGear
+  id: ADTCBURNGear
+  equipment:
+    jumpsuit: ADTClothingUniformCBURN
+    back: ClothingBackpackDuffelCBURN
+    mask: ClothingMaskGasERT
+    eyes: ClothingEyesNightVisionAdvanced
+    ears: ClothingHeadsetAltCentCom
+    neck: ADTClothingBeltHolsterN1984Fill
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterHardsuitCBURN
+    shoes: ADTClothingShoesBootsMagERT
+    id: CBURNPDA
+    pocket1: DoubleEmergencyOxygenTankFilled
+    pocket2: ADTBaseUplinkBOBERTCBURN
+    belt: ADTShipBattleClothingBeltWarbelt
+    suitstorage: JetpackBlackFilled
+    underwearb: ADTClothingUnderwearBottomBriefsWhite
+    underweart: ADTClothingUnderwearTopTShirt
+    socks: ADTClothingUnderwearSocksComfyGrey
+  storage:
+    back:
+    - PillAmbuzolPlus
+    - ADTWeaponChainsword
+    - FoodSnackNutribrick
+    - FoodSnackNutribrick
+    - DrinkWaterBottleFull
+    - DrinkWaterBottleFull
+    - PinpointerNuclear
+    - SpaceCash1000
+    - CombatKnife
+    - ADTMedkitERTFilled
+    - CrowbarGreen
+
+- type: startingGear
+  id: ADTCmndCBURNGear
+  equipment:
+    jumpsuit: ADTClothingUniformCBURN
+    back: ClothingBackpackDuffelCBURN
+    mask: ClothingMaskGasERT
+    eyes: ClothingEyesNightVisionAdvanced
+    ears: ClothingHeadsetAltCentCom
+    neck: ADTClothingBeltHolsterN1984Fill
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterHardsuitCBURNLeader
+    shoes: ADTClothingShoesBootsMagERT
+    id: CBURNPDA
+    pocket1: DoubleEmergencyOxygenTankFilled
+    pocket2: ADTBaseUplinkBOBERTCBURNLeader
+    belt: ADTShipBattleClothingBeltWarbelt
+    suitstorage: JetpackBlackFilled
+    underwearb: ADTClothingUnderwearBottomBriefsWhite
+    underweart: ADTClothingUnderwearTopTShirt
+    socks: ADTClothingUnderwearSocksComfyGrey
+  storage:
+    back:
+    - JawsOfLife
+    - PillAmbuzolPlus
+    - ADTWeaponChainsword
+    - FoodSnackNutribrick
+    - FoodSnackNutribrick
+    - DrinkWaterBottleFull
+    - DrinkWaterBottleFull
+    - PinpointerNuclear
+    - SpaceCash1000
+    - CombatKnife
+    - ADTMedkitERTFilled
+    - BoxFolderCentCom
+    - RubberStampCentcom

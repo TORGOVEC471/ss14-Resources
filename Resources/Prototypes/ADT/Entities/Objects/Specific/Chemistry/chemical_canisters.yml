@@ -1,0 +1,367 @@
+#Базовая канистра
+- type: entity
+  name: big canister
+  parent: Jug
+  id: ADTReagentCanister
+  description: A big canister for a big boys.
+  components:
+  - type: Solution
+    solution:
+      maxVol: 600
+      reagents: []
+  - type: Sprite
+    sprite: ADT/Objects/Specific/Chemistry/canister.rsi
+    layers:
+      - state: icon
+      - state: fill-1
+        map: [ "enum.SolutionContainerLayers.Fill" ]
+        visible: false
+  - type: Item
+    size: SpecialCanister
+    sprite: ADT/Objects/Specific/Chemistry/canister.rsi
+  - type: HeldSpeedModifier
+    walkModifier: 0.3
+    sprintModifier: 0.3
+  - type: MultiHandedItem
+  - type: Label
+  - type: SolutionContainerVisuals
+    maxFillLevels: 3
+    fillBaseName: fill-
+    inHandsMaxFillLevels: 3
+    inHandsFillBaseName: -fill-
+  - type: StaticPrice
+    price: 180
+  - type: FitsInDispenser
+  - type: Tag
+    tags:
+    - ChemDispensable
+
+- type: entity
+  parent: ADTReagentCanister
+  name: canister (carbon)
+  id: ADTReagentCanisterCarbon
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Label
+    localizedLabel: reagent-name-carbon
+  - type: Solution
+    solution:
+      maxVol: 600
+      reagents:
+      - ReagentId: Carbon
+        Quantity: 600
+
+- type: entity
+  parent: ADTReagentCanister
+  name: canister (iodine)
+  id: ADTReagentCanisterIodine
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Label
+      localizedLabel: reagent-name-iodine
+    - type: Solution
+      solution:
+        maxVol: 600
+        reagents:
+        - ReagentId: Iodine
+          Quantity: 600
+
+- type: entity
+  parent: ADTReagentCanister
+  name: canister (fluorine)
+  id: ADTReagentCanisterFluorine
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Label
+      localizedLabel: reagent-name-fluorine
+    - type: Solution
+      solution:
+        maxVol: 600
+        reagents:
+        - ReagentId: Fluorine
+          Quantity: 600
+
+- type: entity
+  parent: ADTReagentCanister
+  name: canister (chlorine)
+  id: ADTReagentCanisterChlorine
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Label
+      localizedLabel: reagent-name-chlorine
+    - type: Solution
+      solution:
+        maxVol: 600
+        reagents:
+        - ReagentId: Chlorine
+          Quantity: 600
+
+- type: entity
+  parent: ADTReagentCanister
+  name: canister (aluminium)
+  id: ADTReagentCanisterAluminium
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Label
+      localizedLabel: reagent-name-aluminium
+    - type: Solution
+      solution:
+        maxVol: 600
+        reagents:
+        - ReagentId: Aluminium
+          Quantity: 600
+
+- type: entity
+  parent: ADTReagentCanister
+  name: canister (phosphorus)
+  id: ADTReagentCanisterPhosphorus
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Label
+      localizedLabel: reagent-name-phosphorus
+    - type: Solution
+      solution:
+        maxVol: 600
+        reagents:
+        - ReagentId: Phosphorus
+          Quantity: 600
+
+- type: entity
+  parent: ADTReagentCanister
+  name: canister (sulfur)
+  id: ADTReagentCanisterSulfur
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Label
+      localizedLabel: reagent-name-sulfur
+    - type: Solution
+      solution:
+        maxVol: 600
+        reagents:
+        - ReagentId: Sulfur
+          Quantity: 600
+
+- type: entity
+  parent: ADTReagentCanister
+  name: canister (silicon)
+  id: ADTReagentCanisterSilicon
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Label
+      localizedLabel: reagent-name-silicon
+    - type: Solution
+      solution:
+        maxVol: 600
+        reagents:
+        - ReagentId: Silicon
+          Quantity: 600
+
+- type: entity
+  parent: ADTReagentCanister
+  name: canister (hydrogen)
+  id: ADTReagentCanisterHydrogen
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Label
+      localizedLabel: reagent-name-hydrogen
+    - type: Solution
+      solution:
+        maxVol: 600
+        reagents:
+        - ReagentId: Hydrogen
+          Quantity: 600
+
+- type: entity
+  parent: ADTReagentCanister
+  name: canister (lithium)
+  id: ADTReagentCanisterLithium
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Label
+      localizedLabel: reagent-name-lithium
+    - type: Solution
+      solution:
+        maxVol: 600
+        reagents:
+        - ReagentId: Lithium
+          Quantity: 600
+
+- type: entity
+  parent: ADTReagentCanister
+  name: canister (sodium)
+  id: ADTReagentCanisterSodium
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Label
+      localizedLabel: reagent-name-sodium
+    - type: Solution
+      solution:
+        maxVol: 600
+        reagents:
+        - ReagentId: Sodium
+          Quantity: 600
+
+- type: entity
+  parent: ADTReagentCanister
+  name: canister (potassium)
+  id: ADTReagentCanisterPotassium
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Label
+      localizedLabel: reagent-name-potassium
+    - type: Solution
+      solution:
+        maxVol: 600
+        reagents:
+        - ReagentId: Potassium
+          Quantity: 600
+
+- type: entity
+  parent: ADTReagentCanister
+  name: canister (radium)
+  id: ADTReagentCanisterRadium
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Label
+      localizedLabel: reagent-name-radium
+    - type: Solution
+      solution:
+        maxVol: 600
+        reagents:
+        - ReagentId: Radium
+          Quantity: 600
+
+- type: entity
+  parent: ADTReagentCanister
+  name: canister (iron)
+  id: ADTReagentCanisterIron
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Label
+      localizedLabel: reagent-name-iron
+    - type: Solution
+      solution:
+        maxVol: 600
+        reagents:
+        - ReagentId: Iron
+          Quantity: 600
+
+- type: entity
+  parent: ADTReagentCanister
+  name: canister (copper)
+  id: ADTReagentCanisterCopper
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Label
+      localizedLabel: reagent-name-copper
+    - type: Solution
+      solution:
+        maxVol: 600
+        reagents:
+        - ReagentId: Copper
+          Quantity: 600
+
+- type: entity
+  parent: ADTReagentCanister
+  name: canister (gold)
+  id: ADTReagentCanisterGold
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Label
+      localizedLabel: reagent-name-gold
+    - type: Solution
+      solution:
+        maxVol: 600
+        reagents:
+        - ReagentId: Gold
+          Quantity: 600
+
+- type: entity
+  parent: ADTReagentCanister
+  name: canister (mercury)
+  id: ADTReagentCanisterMercury
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Label
+      localizedLabel: reagent-name-mercury
+    - type: Solution
+      solution:
+        maxVol: 600
+        reagents:
+        - ReagentId: Mercury
+          Quantity: 600
+
+- type: entity
+  parent: ADTReagentCanister
+  name: canister (silver)
+  id: ADTReagentCanisterSilver
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Label
+      localizedLabel: reagent-name-silver
+    - type: Solution
+      solution:
+        maxVol: 600
+        reagents:
+        - ReagentId: Silver
+          Quantity: 600
+
+- type: entity
+  parent: ADTReagentCanister
+  name: canister (ethanol)
+  id: ADTReagentCanisterEthanol
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Label
+      localizedLabel: reagent-name-ethanol
+    - type: Solution
+      solution:
+        maxVol: 600
+        reagents:
+        - ReagentId: Ethanol
+          Quantity: 600
+
+- type: entity
+  parent: ADTReagentCanister
+  name: canister (sugar)
+  id: ADTReagentCanisterSugar
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Label
+      localizedLabel: reagent-name-sugar
+    - type: Solution
+      solution:
+        maxVol: 600
+        reagents:
+        - ReagentId: Sugar
+          Quantity: 600
+
+- type: entity
+  parent: ADTReagentCanister
+  name: canister (nitrogen)
+  id: ADTReagentCanisterNitrogen
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Label
+      localizedLabel: reagent-name-nitrogen
+    - type: Solution
+      solution:
+        maxVol: 600
+        reagents:
+        - ReagentId: Nitrogen
+          Quantity: 600
+
+- type: entity
+  parent: ADTReagentCanister
+  name: canister (oxygen)
+  id: ADTReagentCanisterOxygen
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Label
+      localizedLabel: reagent-name-oxygen
+    - type: Solution
+      solution:
+        maxVol: 600
+        reagents:
+        - ReagentId: Oxygen
+          Quantity: 600

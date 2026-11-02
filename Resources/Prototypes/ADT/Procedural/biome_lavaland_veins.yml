@@ -1,0 +1,32 @@
+# Стада и мелкая живность
+- type: biomeMarkerLayer
+  id: ADTLavaGutlunchHerd
+  prototype: ADTMobGutlunch
+  minGroupSize: 3
+  maxGroupSize: 6
+  maxCount: 5
+  radius: 24
+
+- type: biomeMarkerLayer
+  id: ADTLavaGutlunchPair
+  prototype: ADTMobGuthen
+  minGroupSize: 1
+  maxGroupSize: 2
+  maxCount: 3
+  radius: 24
+
+- type: biomeMarkerLayer
+  id: ADTLavaGubbucks
+  prototype: ADTMobGubbuck
+  minGroupSize: 1
+  maxGroupSize: 2
+  maxCount: 3
+  radius: 24
+
+- type: biomeMarkerLayer
+  id: ADTLavaGoldgrubs
+  prototype: ADTMobGoldgrub
+  minGroupSize: 1
+  maxGroupSize: 2
+  maxCount: 7
+  radius: 20

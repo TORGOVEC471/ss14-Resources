@@ -1,0 +1,163 @@
+﻿- type: entity
+  id: ActionStationAiInfo
+  name: View Information
+  description: View the information of your chassis and station.
+  components:
+  - type: Action
+    itemIconStyle: BigAction
+  - type: Sprite
+    sprite: Interface/Actions/actions_ai.rsi
+    layers:
+    - state: manifest
+  - type: InstantAction
+    event: !type:StationAiInfoActionEvent
+
+- type: entity
+  id: ActionStationAiRadar
+  name: Mass Scanner Interface
+  description: View a Mass Scanner Interface.
+  components:
+  - type: Action
+    keywords: [ "AI", "console", "interface" ]
+    priority: -9
+  - type: Sprite
+    sprite: Interface/Actions/actions_ai.rsi
+    layers:
+    - state: mass_scanner
+      map: ["enum.ActionVisuals.Icon"]
+    - state: mass_scanner
+      map: ["enum.ActionVisuals.IconToggled"]
+      visible: false
+  - type: InstantAction
+    event: !type:ToggleIntrinsicUIEvent { key: enum.RadarConsoleUiKey.Key }
+
+- type: entity
+  id: ActionStationAiCrewMonitoring
+  name: Crew Monitoring Interface
+  description: View a Crew Monitoring Interface.
+  components:
+  - type: Action
+    keywords: [ "AI", "console", "interface" ]
+    priority: -8
+  - type: Sprite
+    sprite: Interface/Actions/actions_ai.rsi
+    layers:
+    - state: crew_monitor
+      map: ["enum.ActionVisuals.Icon"]
+    - state: crew_monitor
+      map: ["enum.ActionVisuals.IconToggled"]
+      visible: false
+  - type: InstantAction
+    event: !type:ToggleIntrinsicUIEvent { key: enum.ADTCrewMonitoringUIKey.Key }
+
+- type: entity
+  id: ActionStationAiStationRecords
+  name: Station Records Interface
+  description: View a Station Records Interface.
+  components:
+  - type: Action
+    keywords: [ "AI", "console", "interface" ]
+    priority: -7
+  - type: Sprite
+    sprite: Interface/Actions/actions_ai.rsi
+    layers:
+    - state: station_records
+      map: ["enum.ActionVisuals.Icon"]
+    - state: station_records
+      map: ["enum.ActionVisuals.IconToggled"]
+      visible: false
+  - type: InstantAction
+    event: !type:ToggleIntrinsicUIEvent { key: enum.GeneralStationRecordConsoleKey.Key }
+
+- type: entity
+  id: ActionStationAiCommunications
+  name: Communications Interface
+  description: View a Communications Interface.
+  components:
+  - type: Action
+    keywords: [ "AI", "console", "interface" ]
+    priority: -6
+  - type: Sprite
+    sprite: ADT/Interface/Actions/action_ai.rsi
+    layers:
+    - state: comms_console
+      map: ["enum.ActionVisuals.Icon"]
+    - state: comms_console
+      map: ["enum.ActionVisuals.IconToggled"]
+      visible: false
+  - type: InstantAction
+    event: !type:ToggleIntrinsicUIEvent { key: enum.CommunicationsConsoleUiKey.Key }
+
+- type: entity
+  id: ActionStationAiAtmosphericAlerts
+  name: Atmospheric Alerts
+  description: View a Atmospheric Alerts Interface.
+  components:
+  - type: Action
+    keywords: [ "AI", "console", "interface" ]
+    priority: -5
+  - type: Sprite
+    sprite: ADT/Interface/Actions/action_ai.rsi
+    layers:
+    - state: atmos_alerts
+      map: ["enum.ActionVisuals.Icon"]
+    - state: atmos_alerts
+      map: ["enum.ActionVisuals.IconToggled"]
+      visible: false
+  - type: InstantAction
+    event: !type:ToggleIntrinsicUIEvent { key: enum.AtmosAlertsComputerUiKey.Key }
+
+- type: entity
+  id: ADTActionBackToAi
+  name: Back to Ai
+  description: Sends your mind back to the core.
+  components:
+  - type: Action
+    keywords: [ "AI", "console", "interface" ]
+    priority: -9
+  - type: Sprite
+    sprite: Interface/Actions/actions_ai.rsi
+    layers:
+    - state: ai_core
+      map: ["enum.ActionVisuals.Icon"]
+    - state: ai_core
+      map: ["enum.ActionVisuals.IconToggled"]
+      visible: false
+  - type: InstantAction
+    event: !type:ReturnMindIntoAiEvent
+
+- type: entity
+  id: ADTActionOpenRemoteDevicesMenu
+  name: Open list of remote devices
+  description: Opens a menu with available remote devices.
+  components:
+  - type: Action
+    keywords: [ "AI", "console", "interface" ]
+    priority: -9
+  - type: Sprite
+    sprite: Mobs/Silicon/chassis.rsi
+    layers:
+    - state: robot
+      map: ["enum.ActionVisuals.Icon"]
+    - state: robot
+      map: ["enum.ActionVisuals.IconToggled"]
+      visible: false
+  - type: InstantAction
+    event: !type:ToggleRemoteDevicesScreenEvent
+
+- type: entity
+  id: ActionStationAiNanoChat
+  components:
+  - type: Action
+    keywords: [ "AI", "console", "interface" ]
+    priority: -4
+  - type: Sprite
+    sprite: ADT/Misc/program_icons.rsi
+    layers:
+    - state: nanochat
+      map: ["enum.ActionVisuals.Icon"]
+    - state: nanochat
+      map: ["enum.ActionVisuals.IconToggled"]
+      visible: false
+  - type: InstantAction
+    event: !type:StationAiNanoChatActionEvent

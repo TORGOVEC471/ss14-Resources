@@ -1,0 +1,605 @@
+- type: entity
+  id: ADTProjectileIonRifle
+  parent: BulletDisablerPractice
+  name: ion bolt
+  description: No energy
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: FlyBySound
+    sound:
+      collection: EnergyMiss
+      params:
+        volume: 5
+  - type: Ammo
+  - type: Reflective
+    reflective:
+    - Energy
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles_tg.rsi
+    layers:
+    - state: omnilaser
+      shader: unshaded
+  - type: Projectile
+    impactEffect: BulletImpactEffectDisabler
+    damage:
+      types:
+        Heat: 2
+    soundHit:
+      path: /Audio/Weapons/Guns/Hits/bullet_hit.ogg
+    forceSound: true
+  - type: EmpOnCollide
+    energyConsumption: 80000
+  - type: StaminaDamageOnCollide
+    damage: 0
+
+- type: entity
+  name: Laser bolt
+  id: ADTBulletLaserMK2
+  parent: BulletDisablerPractice
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles_tg.rsi
+    layers:
+    - state: omnilaser
+      shader: unshaded
+  - type: Projectile
+    impactEffect: BulletImpactEffectDisabler
+    damage:
+      types:
+        Heat: 24
+    soundHit:
+      collection: WeakHit
+    forceSound: true
+  - type: Reflective ## почему изначально не дописали ему дефлект - неясно
+    reflective:
+    - Energy
+
+- type: entity
+  id: ADTBaseBulletRubber
+  name: base bullet rubber
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: rubber
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 3
+    soundHit:
+      path: /Audio/Weapons/Guns/Hits/snap.ogg
+  - type: StaminaDamageOnCollide
+    damage: 22 # 5 hits to stun sounds reasonable
+
+- type: entity
+  id: ADTBulletCutter
+  name: plasma blast
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Reflective
+    reflective:
+      - NonEnergy
+  - type: Sprite
+    noRot: false
+    sprite: ADT/Objects/Weapons/Guns/Projectiles/plasma_cutter.rsi
+    layers:
+    - state: plasmacutter
+      shader: unshaded
+  - type: GatheringProjectile
+    amount: 40
+  - type: Projectile
+    deleteOnCollide: false
+    damage:
+      types:
+        Slash: 5
+  - type: TimedDespawn
+    lifetime: 0.1
+  - type: PointLight
+    radius: 2
+    color: "#00FFFF"
+    energy: 1.5
+
+- type: entity
+  id: ADTBulletCutterAdv
+  name: plasma blast
+  parent: ADTBulletCutter
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    deleteOnCollide: false
+    damage:
+      types:
+        Slash: 7
+  - type: TimedDespawn
+    lifetime: 0.167
+
+- type: entity
+  name: Laser bolt
+  id: ADTBulletLaser
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Reflective
+    reflective:
+    - Energy
+  - type: FlyBySound
+    sound:
+      collection: EnergyMiss
+      params:
+        volume: 5
+  - type: Fixtures
+    fixtures:
+      projectile:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.15,-0.3,0.15,0.3"
+        hard: false
+        mask:
+        - Opaque
+  - type: Sprite
+    sprite: ADT/Objects/Weapons/Guns/Projectiles/projectiles_ss.rsi
+    layers:
+    - state: omnilaser
+      shader: unshaded
+  - type: Physics
+  - type: Ammo
+  - type: Projectile
+    impactEffect: ADTBulletImpactEffectLaser
+    damage:
+      types:
+        Heat: 20
+    soundHit:
+      collection: WeakHit
+    forceSound: true
+
+- type: entity
+  name: ion bolt
+  id: ADTBulletIon
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Reflective
+    reflective:
+    - Energy
+  - type: FlyBySound
+    sound:
+      collection: EnergyMiss
+      params:
+        volume: 5
+  - type: Fixtures
+    fixtures:
+      projectile:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.15,-0.3,0.15,0.3"
+        hard: false
+        mask:
+        - Opaque
+  - type: Sprite
+    sprite: ADT/Objects/Weapons/Guns/Projectiles/projectiles_ss.rsi
+    layers:
+    - state: omnilaser_yellow
+      shader: unshaded
+  - type: Physics
+  - type: Ammo
+  - type: Projectile
+    impactEffect: ADTBulletImpactEffectIon
+    damage:
+      types:
+        Shock: 1
+    soundHit:
+      collection: WeakHit
+    forceSound: true
+  - type: EmpOnCollide
+    energyConsumption: 35000
+    disableDuration: 20
+
+- type: entity
+  name: stanner bolt
+  id: ADTBulletDisabler
+  parent: BulletDisabler
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StaminaDamageOnCollide
+    damage: 25
+  - type: Projectile
+    impactEffect: BulletImpactEffectDisabler
+    damage:
+      types:
+        Heat: 5
+    soundHit:
+      collection: WeakHit
+    forceSound: true
+
+- type: entity
+  id: ADTBulletMic
+  name: MIC bolt
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  description: Not too bad, but you still don't want to get hit by it.
+  components:
+  - type: Sprite
+    noRot: false
+    sprite: ADT/Objects/Weapons/Guns/Projectiles/cbbolt.rsi
+    layers:
+    - state: cbbolt
+  - type: Projectile
+    damage:
+      types:
+        Heat: 15
+  - type: Ammo
+    muzzleFlash: null
+  - type: Reflective
+    reflective:
+    - Energy
+  - type: Fixtures
+    fixtures:
+      projectile:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.05,-0.05,0.05,0.05"
+        hard: false
+        mask:
+        - Opaque
+  - type: KnockdownOnCollide
+  - type: BlurOnCollide
+  - type: StaminaDamageOnCollide
+    damage: 65
+
+- type: entity
+  id: ADTBulletEnergyCrossbow
+  name: Energy Crossbow bolt
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  description: Not too bad, but you still don't want to get hit by it.
+  components:
+  - type: Sprite
+    noRot: false
+    sprite: ADT/Objects/Weapons/Guns/Projectiles/cbbolt.rsi
+    layers:
+    - state: cbbolt
+  - type: Projectile
+    damage:
+      types:
+        Heat: 7
+  - type: Ammo
+    muzzleFlash: null
+  - type: Reflective
+    reflective:
+    - Energy
+  - type: Fixtures
+    fixtures:
+      projectile:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.05,-0.05,0.05,0.05"
+        hard: false
+        mask:
+        - Opaque
+  - type: KnockdownOnCollide
+  - type: BlurOnCollide
+  - type: TimedDespawn
+    lifetime: 0.1
+
+- type: entity
+  id: ADTBulletKineticAccelerator
+  parent: BulletKinetic
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    impactEffect: BulletImpactEffectKinetic
+    damage:
+      types:
+        Blunt: 40
+        Structural: 30
+  - type: TimedDespawn
+    lifetime: 0.14
+  - type: PressureDamageModify
+    projDamage: 0.25
+
+- type: entity
+  id: ADTBulletKineticPistol
+  parent: BulletKinetic
+  categories: [ HideSpawnMenu ]
+  description: Not too bad, but you still don't want to get hit by it.
+  components:
+  - type: Projectile
+    impactEffect: BulletImpactEffectKinetic
+    damage:
+      types:
+        Blunt: 20
+        Structural: 20
+
+- type: entity
+  id: ADTBulletKineticRepeater
+  parent: BulletKinetic
+  categories: [ HideSpawnMenu ]
+  description: Not too bad, but you still don't want to get hit by it.
+  components:
+  - type: Projectile
+    impactEffect: BulletImpactEffectKinetic
+    damage:
+      types:
+        Blunt: 15
+        Structural: 20
+
+- type: entity
+  id: ADTBulletKineticRailgun
+  parent: BulletKinetic
+  categories: [ HideSpawnMenu ]
+  description: Not too bad, but you still don't want to get hit by it.
+  components:
+  - type: Projectile
+    deleteOnCollide: false
+    impactEffect: BulletImpactEffectKinetic
+    damage:
+      types:
+        Blunt: 70
+        Structural: 20
+  - type: GatheringProjectile
+    amount: 40
+
+- type: entity
+  id: ADTBulletKineticShotgunSpread
+  parent: BulletKinetic
+  categories: [ HideSpawnMenu ]
+  description: Not too bad, but you still don't want to get hit by it.
+  components:
+  - type: ProjectileSpread
+    proto: ADTBulletKineticShotgunPellet
+    count: 6
+    spread: 35
+  - type: Projectile
+    impactEffect: BulletImpactEffectKinetic
+    damage:
+      types:
+        Blunt: 12
+        Structural: 20
+
+- type: entity
+  id: ADTBulletKineticShotgunPellet
+  parent: BulletKinetic
+  categories: [ HideSpawnMenu ]
+  description: Not too bad, but you still don't want to get hit by it.
+  components:
+  - type: Projectile
+    impactEffect: BulletImpactEffectKinetic
+    damage:
+      types:
+        Blunt: 12
+        Structural: 20
+
+- type: entity
+  name: Laser bolt
+  id: ADTBulletLaserGreenWeak
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Reflective
+    reflective:
+    - Energy
+  - type: FlyBySound
+    sound:
+      collection: EnergyMiss
+      params:
+        volume: 5
+  - type: Fixtures
+    fixtures:
+      projectile:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.15,-0.3,0.15,0.3"
+        hard: false
+        mask:
+        - Opaque
+  - type: Sprite
+    sprite: ADT/Objects/Weapons/Guns/Projectiles/projectiles_ss.rsi
+    layers:
+    - state: greenlaser
+      shader: unshaded
+  - type: Physics
+  - type: Ammo
+  - type: Projectile
+    impactEffect: ADTBulletImpactEffectLaserGreen
+    damage:
+      types:
+        Heat: 5
+        Radiation: 2
+    soundHit:
+      collection: WeakHit
+    forceSound: true
+
+- type: entity
+  id: ADTBulletCutterWeak
+  name: cutter bolt
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  description: Not too bad, but you still don't want to get hit by it.
+  components:
+  - type: Reflective
+    reflective:
+      - NonEnergy
+  - type: Sprite
+    noRot: false
+    sprite: ADT/Objects/Weapons/Guns/Projectiles/projectiles_ss.rsi
+    layers:
+    - state: greenlaser
+      shader: unshaded
+  - type: GatheringProjectile
+    amount: 20
+  - type: Projectile
+    deleteOnCollide: false
+    damage:
+      types:
+        Heat: 6
+  - type: TimedDespawn
+    lifetime: 0.12
+  - type: PointLight
+    radius: 2
+    color: green
+    energy: 1
+
+- type: entity
+  name: stanner bolt
+  id: ADTMechDisabler
+  parent: BulletDisabler
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StaminaDamageOnCollide
+    damage: 25
+  - type: Projectile
+    impactEffect: BulletImpactEffectDisabler
+    soundHit:
+      collection: WeakHit
+    forceSound: true
+  - type: ProjectileSpread
+    proto: BulletDisabler
+    count: 3
+    spread: 20
+
+- type: entity
+  name: electric laser bolt
+  id: ADTBulletYellowLaser
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Reflective
+    reflective:
+    - Energy
+  - type: FlyBySound
+    sound:
+      collection: EnergyMiss
+      params:
+        volume: 5
+  - type: Fixtures
+    fixtures:
+      projectile:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.15,-0.3,0.15,0.3"
+        hard: false
+        mask:
+        - Opaque
+  - type: Sprite
+    sprite: ADT/Objects/Weapons/Guns/Projectiles/projectiles_ss.rsi
+    layers:
+    - state: omnilaser_yellow
+      shader: unshaded
+  - type: Physics
+  - type: Ammo
+  - type: Projectile
+    impactEffect: ADTBulletImpactEffectIon
+    damage:
+      types:
+        Heat: 11
+        Shock: 4
+    soundHit:
+      collection: WeakHit
+    forceSound: true
+  - type: EmpOnCollide
+    energyConsumption: 20
+    disableDuration: 2
+
+- type: entity
+  id: ADTBulletCutterMagmite
+  name: plasma blast
+  parent: ADTBulletCutterAdv
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: ADTDefuseGibtoniteOnHit
+  - type: Sprite
+    layers:
+    - state: plasmacutter_mega
+      shader: unshaded
+  - type: TimedDespawn
+    lifetime: 0.233
+  - type: PointLight
+    radius: 2
+    color: "#FF4B1A"
+    energy: 1.5
+
+- type: entity
+  id: ADTBulletCrusherMark
+  parent: BulletCharge
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: DamageMarkerOnCollide
+    whitelist:
+      components:
+      - Fauna
+    damage:
+      types:
+        Blunt: 56
+        Slash: 4
+
+- type: entity
+  id: ADTBulletCrusherSpearMark
+  parent: ADTBulletCrusherMark
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: DamageMarkerOnCollide
+    whitelist:
+      components:
+      - Fauna
+    damage:
+      types:
+        Blunt: 45
+        Slash: 3
+  - type: TimedDespawn
+    lifetime: 0.25
+
+- type: entity
+  id: ADTBulletChargeMagmite
+  name: magmite charge bolt
+  parent: ADTBulletCrusherMark
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: ADTDrillPower
+    power: 2
+  - type: GatheringProjectile
+    amount: 4
+  - type: Projectile
+    deleteOnCollide: false
+    impactEffect: BulletImpactEffectKinetic
+    damage:
+      types:
+        Blunt: 0
+  - type: TimedDespawn
+    lifetime: 0.2
+  - type: Sprite
+    noRot: false
+    sprite: Objects/Weapons/Guns/Projectiles/magic.rsi
+    layers:
+    - state: chronobolt
+      shader: unshaded
+      color: "#ff7a1a"
+  - type: PointLight
+    radius: 2
+    color: "#ff7a1a"
+    energy: 1
+
+- type: entity
+  name : heavy laser bolt
+  id: BulletLaserHeavy
+  parent: BulletLaser
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Heat: 15
+
+- type: entity
+  name: narrow laser barrage
+  id: BulletLaserHeavySpread
+  categories: [ HideSpawnMenu ]
+  parent: BulletLaser
+  components:
+  - type: ProjectileSpread
+    proto: BulletLaserHeavy
+    count: 4 #60 heat damage if you hit all your shots, but narrower spread
+    spread: 10

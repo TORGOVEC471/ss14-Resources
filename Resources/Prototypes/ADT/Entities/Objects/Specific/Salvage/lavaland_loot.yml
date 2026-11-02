@@ -1,0 +1,138 @@
+- type: entity
+  id: ADTCursedHeart
+  parent: BaseItem
+  name: heart
+  description: "I feel bad for the heartless bastard who lost this."
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Specific/Lavaland/loot.rsi
+    state: cursed_heart
+  - type: Item
+    size: Small
+  - type: CursedHeartGrant
+  - type: Tag
+    tags:
+    - Meat
+    - Organ
+
+- type: entity
+  id: ADTVavilonBook
+  parent: BaseItem
+  name: vavilon book
+  description: читат книжки.
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Specific/Lavaland/loot.rsi
+    state: vavilon_book
+  - type: Item
+    size: Small
+  - type: GrantLanguagesOnUse
+    languages:
+    # Common
+    - GalacticCommon
+    - Arachnid
+    - Nekomimetic
+    - Draconic
+    - Canilunzt
+    - SikTaj
+    - Nian
+    - SolCommon
+    - BorgTalk
+    - Drask
+    - Urs
+    - Arkane
+    - Dwarf
+    - CintaTaj
+    - Gutter
+    - NeoRusskiya
+    - Clownish
+    - Scratches
+    - Elysian
+    # exclusive
+    - RootSpeak
+    - Bubblish
+    - Fire
+    - Mar
+    - VoxPidgin
+    - RobotTalk
+    # other
+    - CodeSpeak
+    - Dev
+    - SignLanguage
+  - type: Tag
+    tags:
+    - Book
+
+- type: entity
+  id: ADTVampirismCrystal
+  parent: BasePKAUpgrade
+  name: a red crystal
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Specific/Lavaland/loot.rsi
+    state: crystal
+  - type: ADTGunUpgrade
+    cost: 10
+    tags: [ GunUpgradeVampirism ]
+    examineText: gun-upgrade-examine-text-vampirism
+  - type: ADTGunUpgradeVampirism
+    damageOnHit:
+      types:
+        Slash: -2
+        Piercing: -2
+        Blunt: -2
+
+- type: entity
+  id: ADTMagmaGem
+  parent: ADTGemSpecialBase
+  name: calcified auric
+  description: A hot, faintly glowing mineral taken from the guts of a magmawing watcher. It can be smelted down into pure gold; press it to your chest to warm up.
+  components:
+  - type: Sprite
+    layers:
+    - sprite: ADT/Objects/Specific/Lavaland/magma_gem.rsi
+      state: icon
+      map: [ "base" ]
+    - sprite: ADT/Objects/Specific/Lavaland/Gems/gems.rsi
+      state: shine
+      map: [ "shine" ]
+  - type: Tag
+    tags:
+    - ADTGem
+    - ADTMagmaGem
+  - type: PointLight
+    color: "#ff7a2b"
+  - type: PhysicalComposition
+    materialComposition:
+      Gold: 100
+  - type: StaticPrice
+    price: 2000
+  - type: ADTGem
+    jewelryKey: magma
+    pointValue: 700
+    sheet: IngotGold1
+    sheetAmount: 50
+  - type: ADTGemTemperature
+    delta: 60
+  - type: UseDelay
+    delay: 15
+
+- type: entity
+  id: ADTAshDrakeHide
+  parent: BaseItem
+  name: ash drake hide
+  description: A plate of scales torn off an ash drake. Still warm.
+  components:
+  - type: ADTDehairable
+    result: ADTMaterialHairlessHide1
+    multiplier: 3
+  - type: Sprite
+    sprite: ADT/Objects/Specific/Lavaland/ashdrake_hide.rsi
+    state: icon
+  - type: Item
+    size: Normal
+  - type: Tag
+    tags:
+    - ADTAshDrakeHide
+  - type: StaticPrice
+    price: 500

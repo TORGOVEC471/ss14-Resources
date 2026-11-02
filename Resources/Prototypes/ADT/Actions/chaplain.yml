@@ -1,0 +1,56 @@
+- type: entity
+  id: ActionChaplainBeliever
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Action
+    itemIconStyle: BigAction
+    useDelay: 5
+    priority: -60
+  - type: Sprite
+    sprite: ADT/Interface/Actions/actions_chaplain.rsi
+    layers:
+    - state: saint_fist
+  - type: TargetAction
+  - type: EntityTargetAction
+    whitelist:
+      components:
+      - HumanoidProfile
+    canTargetSelf: false
+    event: !type:ChaplainMakeBelieverActionEvent
+
+- type: entity
+  id: ActionChaplainTransfer
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Action
+    itemIconStyle: BigAction
+    useDelay: 30
+    priority: -59
+  - type: Sprite
+    sprite: ADT/Interface/Actions/actions_chaplain.rsi
+    layers:
+    - state: hand_of_wololo
+  - type: TargetAction
+  - type: EntityTargetAction
+    whitelist:
+      components:
+      - Body
+    canTargetSelf: false
+    event: !type:ChaplainPrayersHandActionEvent
+
+- type: entity
+  id: ActionChaplainHolyWater
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Action
+    itemIconStyle: BigAction
+    useDelay: 30
+    priority: -58
+  - type: Sprite
+    sprite: ADT/Interface/Actions/actions_chaplain.rsi
+    layers:
+    - state: holy_touch
+  - type: TargetAction
+  - type: EntityTargetAction
+    canTargetSelf: false
+    event: !type:ChaplainHolyTouchActionEvent

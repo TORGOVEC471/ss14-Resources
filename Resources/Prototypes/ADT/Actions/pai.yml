@@ -1,0 +1,29 @@
+- type: entity
+  parent: BaseMentalAction
+  id: ActionPAIPDA
+  name: Open PDA
+  description: Opens the PDA UI if you are in one.
+  components:
+    - type: Action
+      itemIconStyle: NoItem
+    - type: Sprite
+      sprite: Objects/Devices/pda.rsi
+      layers:
+      - state: pda
+    - type: InstantAction
+      event: !type:PAIPDAActionEvent
+
+- type: entity
+  parent: BaseMentalAction
+  id: ActionPAIConsole
+  name: Access Console
+  description: Opens the console UI if you are slotted in one.
+  components:
+  - type: Action
+    itemIconStyle: NoItem
+  - type: Sprite
+    sprite: Structures/Machines/computers.rsi
+    layers:
+    - state: avionics-systems
+  - type: InstantAction
+    event: !type:PAIConsoleActionEvent

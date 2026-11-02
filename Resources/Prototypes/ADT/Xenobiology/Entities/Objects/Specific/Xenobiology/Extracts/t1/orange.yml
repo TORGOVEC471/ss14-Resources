@@ -1,0 +1,83 @@
+- type: entity
+  id: OrangeSlimeExtract
+  parent: BaseSlimeExtract
+  name: orange slime extract
+  components:
+  - type: Sprite
+    layers:
+    - sprite: ADT/Xenobiology/Specific/Xenobiology/extract.rsi
+      state: core
+      color: "#ff9f1a"
+  - type: SlimeExtract
+    extractReactions:
+    - OrangeSlimeExtractWaterReaction
+    - OrangeSlimeExtractPlasmaReaction
+    - OrangeSlimeExtractBloodReaction
+  - type: Tag
+    tags:
+    - XenobiologyOrangeExtract
+
+- type: extractReaction
+  id: OrangeSlimeExtractWaterReaction
+  requirements:
+    Water: 1
+  effects:
+  - effect: !type:PopupMessage
+      type: Pvs
+      messages: [ "xeno-extract-reaction" ]
+    scalingOffset: 0
+  - effect: !type:PlaySoundEffect
+      sound: /Audio/Effects/Chemistry/bubbles.ogg
+    scalingOffset: 0
+  - effect: !type:DoSmokeEntityEffect
+      duration: 10
+      spreadAmount: 75
+      smokePrototype: Smoke
+      solution:
+        reagents:
+        - ReagentId: TearGas
+          Quantity: 20
+    scalingOffset: 1
+  shouldDelete: false
+
+- type: extractReaction
+  id: OrangeSlimeExtractPlasmaReaction
+  requirements:
+    Plasma: 1
+  effects:
+  - effect: !type:PopupMessage
+      type: Pvs
+      messages: [ "xeno-extract-reaction" ]
+    scalingOffset: 0
+  - effect: !type:PlaySoundEffect
+      sound: /Audio/Effects/Chemistry/bubbles.ogg
+    scalingOffset: 0
+  - effect: !type:IgniteNearbyEffect
+      radius: 3
+      fireStacks: 5
+    scalingOffset: 1
+  - effect: !type:Flash
+      maxRange: 7
+      rangePerUnit: 1
+      sound: /Audio/_Goobstation/Wizard/zapbang.ogg
+    scalingOffset: 1
+  shouldDelete: false
+
+- type: extractReaction
+  id: OrangeSlimeExtractBloodReaction
+  requirements:
+    Blood: 1
+  effects:
+  - effect: !type:PopupMessage
+      type: Pvs
+      messages: [ "xeno-extract-reaction-reagent" ]
+    scalingOffset: 0
+  - effect: !type:PlaySoundEffect
+      sound: /Audio/Effects/Chemistry/bubbles.ogg
+    scalingOffset: 0
+  - effect: !type:AddReagentToSolution
+      reagent: CapsaicinOil
+      solution: extract
+    scalingFactor: 1
+    scalingOffset: 0
+  shouldDelete: false

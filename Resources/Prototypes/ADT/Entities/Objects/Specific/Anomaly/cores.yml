@@ -1,0 +1,61 @@
+- type: entity
+  parent: BaseAnomalyCore
+  id: ADTAnomalyCoreMonkey
+  suffix: Monkey
+  components:
+  - type: Sprite
+    sprite: ADT/Structures/Specific/Anomalies/Cores/monkey_core.rsi
+  - type: PointLight
+    radius: 1.8
+    energy: 3.5
+    color: "#FFFE42"
+    castShadows: false
+    lightMask: ADTLightMaskCircleRings
+
+- type: entity
+  parent: BaseAnomalyInertCore
+  id: ADTAnomalyCoreMonkeyInert
+  suffix: Monkey, Inert
+  components:
+  - type: Sprite
+    sprite: ADT/Structures/Specific/Anomalies/Cores/monkey_core.rsi
+  - type: PointLight
+    radius: 1.8
+    energy: 3.5
+    color: "#FFFE42"
+    castShadows: false
+    lightMask: ADTLightMaskCircleRings
+
+- type: entity
+  parent: BaseAnomalyCore
+  id: ADTAnomalyCoreHW
+  suffix: HW
+  components:
+  - type: HWAnomCoreLootbox
+    settings:
+      useDelay: 3
+  - type: Sprite
+    sprite: ADT/Structures/Specific/Anomalies/Cores/hw_core.rsi
+  - type: PointLight
+    radius: 2
+    energy: 3.5
+    color: "#8a1111"
+    castShadows: false
+    lightMask: ADTLightMaskCircleE
+
+- type: entity
+  parent: BaseAnomalyInertCore
+  id: ADTAnomalyCoreHWInert
+  suffix: HW, Inert
+  components:
+  - type: HWAnomCoreLootbox
+    settings:
+      useDelay: 3
+  - type: Sprite
+    sprite: ADT/Structures/Specific/Anomalies/Cores/hw_core.rsi
+  - type: PointLight
+    radius: 2
+    energy: 3.5
+    color: "#8a1111"
+    castShadows: false
+    lightMask: ADTLightMaskCircleE

@@ -1,0 +1,51 @@
+chat-emote-name-workout = качаться
+chat-emote-name-laugh-apathy = выдавить из себя смех
+chat-emote-name-scream-apathy = наигранно закричать
+chat-emote-name-sigh-apathy = театрально вздохнуть
+chat-emote-name-crying-apathy = фальшиво заплакать
+chat-emote-name-blink = моргнуть
+chat-emote-name-hiss = зашипеть
+chat-emote-name-meow = замяукать
+chat-emote-name-mew = мякнуть
+chat-emote-name-purr = замурчать
+chat-emote-name-heck = захекать
+chat-emote-name-whine = поскулить
+chat-emote-name-bark = залаять
+chat-emote-name-spit = плюнуть
+chat-emote-name-coo = ворковать
+chat-emote-name-pop = чпок
+chat-emote-name-bubbles = булькать
+chat-emote-msg-spit = плюёт
+chat-emote-msg-coo = воркует
+chat-emote-msg-pop = чпокает
+chat-emote-msg-bubbles = булькает
+# IPC
+chat-emote-name-synth-yes = Утвердительно пискнуть
+chat-emote-name-synth-no = Отрицательно пискнуть
+chat-emote-name-sigh-buzz = Раздражённо жужжать
+chat-emote-name-startup = Включиться
+chat-emote-name-error = Ошибка
+chat-emote-name-calculating = Вычислять
+chat-emote-name-cute-surprised = Удивиться
+chat-emote-name-cute-scared = Испугаться
+chat-emote-msg-deathgasp-ipc = замирает и недвижимо оседает, { POSS-ADJ($entity) } монитор трескается и выключается...
+# Shadekin
+chat-emote-msg-wurble = урчит
+chat-emote-msg-purse = поджимает уши
+chat-emote-name-wurble = Урчать
+chat-emote-name-purse = Поджать уши
+# Resomi
+chat-emote-name-chirps = трелит
+chat-emote-name-coos = воркует
+# Moth
+chat-emote-msg-flap-wings = хлопает крыльями
+chat-emote-name-flap-wings = Хлопать крыльями
+# Novakid
+chat-emote-msg-fiery-sounds = издаёт пламенные звуки
+chat-emote-name-fiery-sounds = Издать пламенные звуки
+# Celecern
+chat-emote-name-adt-celecern-snort = фыркнуть
+chat-emote-name-adt-celecern-clop = стукнуть копытом
+chat-emote-name-adt-celecern-ear-flick = дёрнуть ухом
+# Reptilian
+chat-emote-name-adt-rumble = Урчать

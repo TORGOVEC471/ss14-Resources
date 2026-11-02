@@ -1,0 +1,25 @@
+- type: entity
+  parent: MarkerBase
+  id: ADTRandomTendrilSpawner
+  name: random tendril
+  suffix: Lavaland
+  components:
+  - type: Sprite
+    layers:
+    - state: red
+    - sprite: ADT/Structures/Specific/tendril.rsi
+      state: tendril
+  - type: EntityTableSpawner
+    offset: 0
+    table: !type:GroupSelector
+      children:
+      - id: ADTTendrilLavaWatcher
+        weight: 2
+      - id: ADTTendrilLegion
+        weight: 2
+      - id: ADTTendrilGoliath
+        weight: 2
+      - id: ADTTendrilRandomThreat
+        weight: 3
+      - id: ADTTendrilDangerous
+        weight: 1

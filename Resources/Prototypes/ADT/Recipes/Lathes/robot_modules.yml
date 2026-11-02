@@ -1,0 +1,34 @@
+- type: latheRecipe
+  parent: BaseGoldBorgModuleRecipe
+  id: ADTBorgModuleChemical
+  result: ADTBorgModuleChemical
+
+- type: latheRecipe
+  parent: BaseGoldBorgModuleRecipe
+  id: ADTBorgModuleAdvancedChemical
+  result: ADTBorgModuleAdvancedChemical
+  materials:
+    Steel: 500
+    Glass: 700
+    Plastic: 300
+    Gold: 100
+
+- type: latheRecipe
+  parent: BaseGoldBorgModuleRecipe
+  id: ADTBorgModuleRescue
+  result: ADTBorgModuleRescue
+
+- type: latheRecipe
+  parent: BaseGoldBorgModuleRecipe
+  id: BorgModuleTopicals
+  result: BorgModuleTopicals
+
+- type: latheRecipe
+  parent: BaseGoldBorgModuleRecipe
+  id: ADTBorgModuleJanicartBuffer
+  result: ADTBorgModuleJanicartBuffer
+
+- type: latheRecipe
+  parent: BaseGoldBorgModuleRecipe
+  id: ADTBorgModuleJanicartVacuum
+  result: ADTBorgModuleJanicartVacuum

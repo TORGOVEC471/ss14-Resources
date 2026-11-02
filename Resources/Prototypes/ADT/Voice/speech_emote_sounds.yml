@@ -1,0 +1,1262 @@
+- type: emoteSounds
+  id: MaleDrask
+  voiceSelectorName: humanoid-profile-editor-voice-masculine
+  params:
+    variation: 0.125
+  sounds:
+    Scream:
+      collection: DraskScream
+    Laugh:
+      collection: MaleLaugh
+    Sneeze:
+      collection: DraskSneeze
+    Cough:
+      collection: DraskCough
+    CatMeow:
+      collection: CatMeows
+    CatHisses:
+      collection: CatHisses
+    MonkeyScreeches:
+      collection: MonkeyScreeches
+    RobotBeep:
+      collection: RobotBeeps
+    Yawn:
+      path: /Audio/ADT/Voice/Drask/drask_yawn.ogg
+    Snore:
+      collection: Snores
+    Honk:
+      collection: BikeHorn
+    Sigh:
+      path: /Audio/ADT/Voice/Drask/drask_sigh.ogg
+    Crying:
+      collection: MaleCry
+    Whistle:
+      collection: Whistles
+    Spit:
+      collection: HumanSpits
+
+- type: emoteSounds
+  id: FemaleDrask
+  voiceSelectorName: humanoid-profile-editor-voice-feminine
+  params:
+    variation: 0.125
+  sounds:
+    Scream:
+      collection: DraskScream
+    Laugh:
+      collection: FemaleLaugh
+    Sneeze:
+      collection: DraskSneeze
+    Cough:
+      collection: DraskCough
+    CatMeow:
+      collection: CatMeows
+    CatHisses:
+      collection: CatHisses
+    MonkeyScreeches:
+      collection: MonkeyScreeches
+    RobotBeep:
+      collection: RobotBeeps
+    Yawn:
+      path: /Audio/ADT/Voice/Drask/drask_yawn.ogg
+    Snore:
+      collection: Snores
+    Honk:
+      collection: CluwneHorn
+    Sigh:
+      path: /Audio/ADT/Voice/Drask/drask_sigh.ogg
+    Crying:
+      collection: FemaleCry
+    Whistle:
+      collection: Whistles
+    Spit:
+      collection: HumanSpits
+
+- type: emoteSounds
+  id: MaleMoth
+  voiceSelectorName: humanoid-profile-editor-voice-masculine
+  params:
+    variation: 0.125
+  sounds:
+    Buzz:
+      collection: MothBuzz
+    Scream:
+      collection: MothScream
+    Laugh:
+      collection: MothLaugh
+    Chitter:
+      collection: MothChitter
+    Squeak:
+      collection: MothSqueak
+    Weh:
+      collection: Weh
+    Sneeze:
+      collection: MaleSneezes
+    Cough:
+      path: /Audio/ADT/Voice/Moth/moth_cough.ogg
+    MonkeyScreeches:
+      collection: MonkeyScreeches
+    Yawn:
+      path: /Audio/ADT/Voice/Moth/moth_yawn.ogg
+    Snore:
+      collection: Snores
+    Honk:
+      collection: BikeHorn
+    Sigh:
+      path: /Audio/ADT/Voice/Moth/moth_sigh.ogg
+    Crying:
+      path: /Audio/ADT/Voice/Moth/moth_cry.ogg
+    Whistle:
+      collection: Whistles
+    Spit:
+      collection: HumanSpits
+    Gasp:
+      path: /Audio/ADT/Voice/Moth/moth_gasp.ogg
+    DefaultDeathgasp:
+      collection: MothDeathGasp
+
+- type: emoteSounds
+  id: FemaleMoth
+  voiceSelectorName: humanoid-profile-editor-voice-feminine
+  params:
+    variation: 0.125
+  sounds:
+    Buzz:
+      collection: MothBuzz
+    Scream:
+      collection: MothScream
+    Laugh:
+      collection: MothLaugh
+    Chitter:
+      collection: MothChitter
+    Squeak:
+      collection: MothSqueak
+    Weh:
+      collection: Weh
+    Sneeze:
+      collection: FemaleSneezes
+    Cough:
+      path: /Audio/ADT/Voice/Moth/moth_cough.ogg
+    MonkeyScreeches:
+      collection: MonkeyScreeches
+    Yawn:
+      path: /Audio/ADT/Voice/Moth/moth_yawn.ogg
+    Snore:
+      collection: Snores
+    Honk:
+      collection: BikeHorn
+    Sigh:
+      path: /Audio/ADT/Voice/Moth/moth_sigh.ogg
+    Crying:
+      path: /Audio/ADT/Voice/Moth/moth_cry.ogg
+    Whistle:
+      collection: Whistles
+    Spit:
+      collection: HumanSpits
+    Gasp:
+      path: /Audio/ADT/Voice/Moth/moth_gasp.ogg
+    DefaultDeathgasp:
+      collection: MothDeathGasp
+
+- type: emoteSounds
+  id: MothBodyEmotes
+  sounds:
+    FlapWings:
+      path: /Audio/ADT/Voice/Moth/moth_flapwings.ogg
+    Clap:
+      collection: Claps
+    ClapSingle:
+      collection: ClapSingle
+    Snap:
+      collection: Snaps
+      params:
+        volume: -6
+    Salute:
+      collection: Salutes
+    Blink:
+      collection: Blink
+
+- type: emoteSounds
+  id: ADTMaleTajaran
+  voiceSelectorName: humanoid-profile-editor-voice-masculine
+  params:
+    variation: 0.125
+  sounds:
+    Scream:
+      collection: TajaranMaleScreams
+    Laugh:
+      collection: MaleLaugh
+    Hiss:
+      collection: TajaranHisses
+    Meow:
+      collection: TajaranMeows
+    Mew:
+      collection: TajaranMews
+    Growl:
+      collection: TajaranGrowls
+    Purr:
+      collection: TajaranPurrs
+    Sneeze:
+      collection: TajaranSneezes
+    Cough:
+      collection: MaleCoughs
+    MonkeyScreeches:
+      collection: MonkeyScreeches
+    RobotBeep:
+      collection: RobotBeeps
+    Yawn:
+      collection: TajaranYawns
+    Snore:
+      collection: Snores
+    Honk:
+      collection: BikeHorn
+    Sigh:
+      collection: TajaranSigh
+    Crying:
+      collection: TajaranCry
+    Whistle:
+      collection: Whistles
+    Spit:
+      collection: HumanSpits
+    Gasp:
+      collection: TajaranGasp
+    # ADT-Apathy Sounds.
+    Scream-apathy:
+      collection: TajaranMaleScreams
+    Laugh-apathy:
+      collection: MaleLaugh
+    Sigh-apathy:
+      collection: TajaranSigh
+    Crying-apathy:
+      collection: TajaranCry
+
+- type: emoteSounds
+  id: ADTFemaleTajaran
+  voiceSelectorName: humanoid-profile-editor-voice-feminine
+  params:
+    variation: 0.125
+  sounds:
+    Scream:
+      collection: TajaranFemaleScreams
+    Laugh:
+      collection: FemaleLaugh
+    Sneeze:
+      collection: TajaranSneezes
+    Cough:
+      collection: FemaleCoughs
+    Hiss:
+      collection: TajaranHisses
+    Meow:
+      collection: TajaranMeows
+    Mew:
+      collection: TajaranMews
+    Growl:
+      collection: TajaranGrowls
+    Purr:
+      collection: TajaranPurrs
+    MonkeyScreeches:
+      collection: MonkeyScreeches
+    RobotBeep:
+      collection: RobotBeeps
+    Yawn:
+      collection: TajaranYawns
+    Snore:
+      collection: Snores
+    Honk:
+      collection: CluwneHorn
+    Sigh:
+      collection: TajaranSigh
+    Crying:
+      collection: TajaranCry
+    Whistle:
+      collection: Whistles
+    Spit:
+      collection: HumanSpits
+    Gasp:
+      collection: TajaranGasp
+    # ADT-Apathy Sounds.
+    Scream-apathy:
+      collection: TajaranFemaleScreams
+    Laugh-apathy:
+      collection: FemaleLaugh
+    Sigh-apathy:
+      collection: TajaranSigh
+    Crying-apathy:
+      collection: TajaranCry
+
+- type: emoteSounds
+  id: UnisexNovakid
+  voiceSelectorName: humanoid-profile-editor-voice-neutral
+  params:
+    variation: 0.125
+  sounds:
+    Scream:
+      collection: NovakidScreams
+    Laugh:
+      collection: NovakidLaugh
+    Sneeze:
+      collection: MaleNovakidSneezes
+    Cough:
+      collection: NovakidCoughs
+    CatMeow:
+      collection: CatMeows
+    CatHisses:
+      collection: CatHisses
+    MonkeyScreeches:
+      collection: MonkeyScreeches
+    RobotBeep:
+      collection: RobotBeeps
+    Yawn:
+      collection: NovakidYawn
+    Snore:
+      collection: Snores
+    Honk:
+      collection: BikeHorn
+    Sigh:
+      collection: NovakidLaugh
+    Crying:
+      collection: MaleCry
+    Whistle:
+      collection: Whistles
+    FierySounds:
+      collection: NovakidLaugh
+
+- type: emoteSounds
+  id: MaleNovakid
+  voiceSelectorName: humanoid-profile-editor-voice-masculine
+  params:
+    variation: 0.125
+  sounds:
+    Scream:
+      collection: NovakidScreams
+    Laugh:
+      collection: NovakidLaugh
+    Sneeze:
+      collection: MaleNovakidSneezes
+    Cough:
+      collection: NovakidCoughs
+    CatMeow:
+      collection: CatMeows
+    CatHisses:
+      collection: CatHisses
+    MonkeyScreeches:
+      collection: MonkeyScreeches
+    RobotBeep:
+      collection: RobotBeeps
+    Yawn:
+      collection: NovakidYawn
+    Snore:
+      collection: Snores
+    Honk:
+      collection: BikeHorn
+    Sigh:
+      collection: NovakidLaugh
+    Crying:
+      collection: MaleCry
+    Whistle:
+      collection: Whistles
+    # ADT-Apathy Sounds.
+    Scream-apathy:
+      collection: NovakidScreams
+    Laugh-apathy:
+      collection: NovakidLaugh
+    Sigh-apathy:
+      collection: MaleSigh
+    Crying-apathy:
+      collection: MaleCry
+    FierySounds:
+      collection: NovakidLaugh
+
+- type: emoteSounds
+  id: FemaleNovakid
+  voiceSelectorName: humanoid-profile-editor-voice-feminine
+  params:
+    variation: 0.125
+  sounds:
+    Scream:
+      collection: NovakidScreams
+    Laugh:
+      collection: NovakidLaugh
+    Sneeze:
+      collection: FemaleNovakidSneezes
+    Cough:
+      collection: NovakidCoughs
+    CatMeow:
+      collection: CatMeows
+    CatHisses:
+      collection: CatHisses
+    MonkeyScreeches:
+      collection: MonkeyScreeches
+    RobotBeep:
+      collection: RobotBeeps
+    Yawn:
+      collection: NovakidYawn
+    Snore:
+      collection: Snores
+    Honk:
+      collection: CluwneHorn
+    Sigh:
+      collection: NovakidLaugh
+    Crying:
+      collection: FemaleCry
+    Whistle:
+      collection: Whistles
+    # ADT-Apathy Sounds.
+    Scream-apathy:
+      collection: NovakidScreams
+    Laugh-apathy:
+      collection: NovakidLaugh
+    Sigh-apathy:
+      collection: FemaleSigh
+    Crying-apathy:
+      collection: FemaleCry
+    FierySounds:
+      collection: NovakidLaugh
+
+- type: emoteSounds
+  id: UnisexIPC
+  voiceSelectorName: humanoid-profile-editor-voice-neutral
+  params:
+    variation: 0.125
+  sounds:
+    RobotBeep:
+      collection: RobotBeeps
+    Calculating:
+      collection: CalculatingIPC
+    SynthYes:
+      path: /Audio/ADT/IPC/synth_yes.ogg
+    SynthNo:
+      path: /Audio/ADT/IPC/synth_no.ogg
+    Buzz:
+      path: /Audio/ADT/IPC/buzz-sigh.ogg
+    SighBuzz:
+      path: /Audio/ADT/IPC/buzz-two.ogg
+    Scream:
+      path: /Audio/ADT/IPC/synth_scream.ogg
+    Beep:
+      path: /Audio/Machines/twobeep.ogg
+    Chime:
+      path: /Audio/Machines/chime.ogg
+    Buzz-Two:
+      path: /Audio/Machines/buzz-two.ogg
+    Honk:
+      path: /Audio/Items/bikehorn.ogg
+    Ping:
+      path: /Audio/Effects/Cargo/ping.ogg
+    StartUp:
+      path: /Audio/ADT/IPC/startup.ogg
+    Error:
+      path: /Audio/ADT/IPC/error.ogg
+    IPCDeathgasp:
+      path: /Audio/ADT/IPC/borg_deathsound.ogg
+
+- type: emoteSounds
+  id: MaleIPC
+  voiceSelectorName: humanoid-profile-editor-voice-masculine
+  params:
+    variation: 0.125
+  sounds:
+    RobotBeep:
+      collection: RobotBeeps
+    Calculating:
+      collection: CalculatingIPC
+    SynthYes:
+      path: /Audio/ADT/IPC/synth_yes.ogg
+    SynthNo:
+      path: /Audio/ADT/IPC/synth_no.ogg
+    Buzz:
+      path: /Audio/ADT/IPC/buzz-sigh.ogg
+    SighBuzz:
+      path: /Audio/ADT/IPC/buzz-two.ogg
+    Scream:
+      path: /Audio/ADT/IPC/synth_scream.ogg
+    Beep:
+      path: /Audio/Machines/twobeep.ogg
+    Chime:
+      path: /Audio/Machines/chime.ogg
+    Buzz-Two:
+      path: /Audio/Machines/buzz-two.ogg
+    Honk:
+      path: /Audio/Items/bikehorn.ogg
+    Ping:
+      path: /Audio/Effects/Cargo/ping.ogg
+    StartUp:
+      path: /Audio/ADT/IPC/startup.ogg
+    Error:
+      path: /Audio/ADT/IPC/error.ogg
+    IPCDeathgasp:
+      path: /Audio/ADT/IPC/borg_deathsound.ogg
+    Laugh:
+      collection: MaleLaugh
+    Sneeze:
+      collection: MaleSneezes
+    Cough:
+      collection: MaleCoughs
+    Yawn:
+      collection: MaleYawn
+    Sigh:
+      collection: MaleSigh
+    Crying:
+      collection: MaleCry
+    Whistle:
+      collection: Whistles
+    Spit:
+      collection: HumanSpits
+
+- type: emoteSounds
+  id: FemaleIPC
+  voiceSelectorName: humanoid-profile-editor-voice-feminine
+  params:
+    variation: 0.125
+  sounds:
+    RobotBeep:
+      collection: RobotBeeps
+    Calculating:
+      collection: CalculatingIPC
+    SynthYes:
+      path: /Audio/ADT/IPC/synth_yes.ogg
+    SynthNo:
+      path: /Audio/ADT/IPC/synth_no.ogg
+    Buzz:
+      path: /Audio/ADT/IPC/buzz-sigh.ogg
+    SighBuzz:
+      path: /Audio/ADT/IPC/buzz-two.ogg
+    Scream:
+      path: /Audio/ADT/IPC/synth_scream.ogg
+    Beep:
+      path: /Audio/Machines/twobeep.ogg
+    Chime:
+      path: /Audio/Machines/chime.ogg
+    Buzz-Two:
+      path: /Audio/Machines/buzz-two.ogg
+    Honk:
+      path: /Audio/Items/bikehorn.ogg
+    Ping:
+      path: /Audio/Effects/Cargo/ping.ogg
+    StartUp:
+      path: /Audio/ADT/IPC/startup.ogg
+    Error:
+      path: /Audio/ADT/IPC/error.ogg
+    IPCDeathgasp:
+      path: /Audio/ADT/IPC/borg_deathsound.ogg
+    Laugh:
+      collection: FemaleLaugh
+    Sneeze:
+      collection: FemaleSneezes
+    Cough:
+      collection: FemaleCoughs
+    Yawn:
+      collection: FemaleYawn
+    Sigh:
+      collection: FemaleSigh
+    Crying:
+      collection: FemaleCry
+    Whistle:
+      collection: Whistles
+    Spit:
+      collection: HumanSpits
+
+- type: emoteSounds
+  id: XenoborgIPC
+  voiceSelectorName: trait-xenoborg-ipc-name
+  params:
+    variation: 0.125
+  sounds:
+    RobotBeep:
+      collection: RobotBeeps
+    Calculating:
+      collection: CalculatingIPC
+    SynthYes:
+      path: /Audio/ADT/IPC/synth_yes.ogg
+    SynthNo:
+      path: /Audio/ADT/IPC/synth_no.ogg
+    Buzz:
+      collection: XenoborgBuzz
+    SighBuzz:
+      path: /Audio/ADT/IPC/buzz-two.ogg
+    Scream:
+      collection: XenoborgScream
+    Beep:
+      collection: XenoborgBeep
+    Chime:
+      collection: XenoborgChime
+    Buzz-Two:
+      collection: XenoborgBuzzTwo
+    Honk:
+      collection: XenoborgBikeHorn
+    Ping:
+      collection: XenoborgPing
+    StartUp:
+      path: /Audio/ADT/IPC/startup.ogg
+    Error:
+      path: /Audio/ADT/IPC/error.ogg
+    IPCDeathgasp:
+      path: /Audio/ADT/IPC/borg_deathsound.ogg
+    Laugh:
+      collection: XenoborgLaugh
+    Sneeze:
+      collection: MaleSneezes
+    Cough:
+      collection: MaleCoughs
+    Yawn:
+      collection: MaleYawn
+    Sigh:
+      collection: MaleSigh
+    Crying:
+      collection: MaleCry
+    Whistle:
+      collection: Whistles
+    Spit:
+      collection: HumanSpits
+
+- type: emoteSounds
+  id: CuteIPC
+  voiceSelectorName: trait-cute-ipc-name
+  params:
+    variation: 0.125
+  sounds:
+    RobotBeep:
+      collection: RobotBeeps
+    Calculating:
+      collection: CalculatingIPC
+    SynthYes:
+      path: /Audio/ADT/IPC/synth_yes.ogg
+    SynthNo:
+      path: /Audio/ADT/IPC/synth_no.ogg
+    Buzz:
+      path: /Audio/ADT/IPC/buzz-sigh.ogg
+    SighBuzz:
+      path: /Audio/ADT/IPC/buzz-two.ogg
+    Scream:
+      collection: PinkScream
+    Beep:
+      path: /Audio/Machines/twobeep.ogg
+    Chime:
+      path: /Audio/Machines/chime.ogg
+    Buzz-Two:
+      path: /Audio/Machines/buzz-two.ogg
+    Honk:
+      path: /Audio/Items/bikehorn.ogg
+    Ping:
+      path: /Audio/Effects/Cargo/ping.ogg
+    StartUp:
+      path: /Audio/ADT/IPC/startup.ogg
+    Error:
+      path: /Audio/ADT/IPC/error.ogg
+    IPCDeathgasp:
+      path: /Audio/ADT/IPC/borg_deathsound.ogg
+    Laugh:
+      collection: PinkLaugh
+    Sneeze:
+      collection: FemaleSneezes
+    Cough:
+      collection: FemaleCoughs
+    Yawn:
+      path: /Audio/ADT/IPC/pink_sigh.ogg
+    Sigh:
+      path: /Audio/ADT/IPC/pink_sigh.ogg
+    Crying:
+      collection: FemaleCry
+    Whistle:
+      collection: Whistles
+    Spit:
+      collection: HumanSpits
+    IPCCuteSurprised:
+      path: /Audio/ADT/IPC/pink_scream1.ogg
+    IPCCuteScared:
+      path: /Audio/ADT/IPC/pink_scream2.ogg
+    Meow:
+      collection: KerfusMeow
+
+- type: emoteSounds
+  id: MaleUrsus
+  voiceSelectorName: humanoid-profile-editor-voice-masculine
+  params:
+    variation: 0.125
+  sounds:
+    Scream:
+      collection: UrsusScreams
+    Laugh:
+      collection: UrsusLaugh
+    Sneeze:
+      collection: MaleSneezes
+    Cough:
+      collection: MaleCoughs
+    CatMeow:
+      collection: CatMeows
+    CatHisses:
+      collection: CatHisses
+    MonkeyScreeches:
+      collection: MonkeyScreeches
+    RobotBeep:
+      collection: RobotBeeps
+    Yawn:
+      collection: MaleYawn
+    Snore:
+      collection: Snores
+    Honk:
+      collection: BikeHorn
+    Sigh:
+      collection: MaleSigh
+    Crying:
+      collection: UrsusCry
+    Whistle:
+      collection: Whistles
+    Spit:
+      collection: HumanSpits
+
+- type: emoteSounds
+  id: FemaleUrsus
+  voiceSelectorName: humanoid-profile-editor-voice-feminine
+  params:
+    variation: 0.125
+  sounds:
+    Scream:
+      collection: UrsusScreams
+    Laugh:
+      collection: UrsusLaugh
+    Sneeze:
+      collection: FemaleSneezes
+    Cough:
+      collection: FemaleCoughs
+    CatMeow:
+      collection: CatMeows
+    CatHisses:
+      collection: CatHisses
+    MonkeyScreeches:
+      collection: MonkeyScreeches
+    RobotBeep:
+      collection: RobotBeeps
+    Yawn:
+      collection: FemaleYawn
+    Snore:
+      collection: Snores
+    Honk:
+      collection: CluwneHorn
+    Sigh:
+      collection: FemaleSigh
+    Crying:
+      collection: UrsusCry
+    Whistle:
+      collection: Whistles
+    Spit:
+      collection: HumanSpits
+
+- type: emoteSounds
+  id: NesMaleVulpa
+  voiceSelectorName: humanoid-profile-editor-voice-masculine
+  params:
+    variation: 0.125
+  sounds:
+    Scream:
+      collection: NesMaleVulpaScreams
+    Laugh:
+      collection: MaleLaugh
+    Sneeze:
+      collection: MaleSneezes
+    Cough:
+      collection: MaleCoughs
+    CatMeow:
+      collection: CatMeows
+    CatHisses:
+      collection: CatHisses
+    MonkeyScreeches:
+      collection: MonkeyScreeches
+    RobotBeep:
+      collection: RobotBeeps
+    Yawn:
+      collection: MaleYawn
+    Snarl:
+      collection: VulpkaninSnarls
+    Snore:
+      collection: Snores
+    Honk:
+      collection: BikeHorn
+    Sigh:
+      collection: MaleSigh
+    Crying:
+      collection: MaleCry
+    Howl:
+      collection: VulpHowls
+    Bark:
+      collection: VulpBarks
+    Growl:
+      collection: VulpGrowls
+    Whine:
+      collection: VulpWhines
+    Whistle:
+      collection: Whistles
+    Heckaet:
+      collection: VulpHeckaetSound
+    Spit:
+      collection: HumanSpits
+    Gasp:
+      collection: MaleGasp
+    DefaultDeathgasp:
+      collection: DeathGasp
+
+- type: emoteSounds
+  id: NesFemaleVulpa
+  voiceSelectorName: humanoid-profile-editor-voice-feminine
+  params:
+    variation: 0.125
+  sounds:
+    Scream:
+      collection: NesFemaleVulpaScreams
+    Laugh:
+      collection: FemaleLaugh
+    Sneeze:
+      collection: FemaleSneezes
+    Cough:
+      collection: FemaleCoughs
+    CatMeow:
+      collection: CatMeows
+    CatHisses:
+      collection: CatHisses
+    MonkeyScreeches:
+      collection: MonkeyScreeches
+    RobotBeep:
+      collection: RobotBeeps
+    Yawn:
+      collection: FemaleYawn
+    Snarl:
+      collection: VulpkaninSnarls
+    Snore:
+      collection: Snores
+    Honk:
+      collection: CluwneHorn
+    Sigh:
+      collection: FemaleSigh
+    Crying:
+      collection: FemaleCry
+    Howl:
+      collection: VulpHowls
+    Bark:
+      collection: VulpBarks
+    Growl:
+      collection: VulpGrowls
+    Whine:
+      collection: VulpWhines
+    Whistle:
+      collection: Whistles
+    Heckaet:
+      collection: VulpHeckaetSound
+    Spit:
+      collection: HumanSpits
+    Gasp:
+      collection: FemaleGasp
+    DefaultDeathgasp:
+      collection: DeathGasp
+
+- type: emoteSounds
+  id: MaleFelinid
+  voiceSelectorName: humanoid-profile-editor-voice-masculine
+  params:
+    variation: 0.125
+  sounds:
+    Scream:
+      collection: FelinidScreams
+    Laugh:
+      collection: MaleLaugh
+    Hiss:
+      collection: FelinidHisses
+    Meow:
+      collection: FelinidMeows
+    Mew:
+      collection: FelinidMews
+    Growl:
+      collection: FelinidGrowls
+    Purr:
+      collection: FelinidPurrs
+    Sneeze:
+      collection: MaleSneezes
+    Cough:
+      collection: MaleCoughs
+    MonkeyScreeches:
+      collection: MonkeyScreeches
+    RobotBeep:
+      collection: RobotBeeps
+    Yawn:
+      collection: MaleYawn
+    Snore:
+      collection: Snores
+    Honk:
+      collection: BikeHorn
+    Sigh:
+      collection: MaleSigh
+    Crying:
+      collection: MaleCry
+    Whistle:
+      collection: Whistles
+    # ADT-Apathy Sounds.
+    Scream-apathy:
+      collection: FelinidScreams
+    Laugh-apathy:
+      collection: MaleLaugh
+    Sigh-apathy:
+      collection: MaleSigh
+    Crying-apathy:
+      collection: MaleCry
+
+- type: emoteSounds
+  id: FemaleFelinid
+  voiceSelectorName: humanoid-profile-editor-voice-feminine
+  params:
+    variation: 0.125
+  sounds:
+    Scream:
+      collection: FelinidScreams
+    Laugh:
+      collection: FemaleLaugh
+    Sneeze:
+      collection: FemaleSneezes
+    Cough:
+      collection: FemaleCoughs
+    Hiss:
+      collection: FelinidHisses
+    Meow:
+      collection: FelinidMeows
+    Mew:
+      collection: FelinidMews
+    Growl:
+      collection: FelinidGrowls
+    Purr:
+      collection: FelinidPurrs
+    MonkeyScreeches:
+      collection: MonkeyScreeches
+    RobotBeep:
+      collection: RobotBeeps
+    Yawn:
+      collection: FemaleYawn
+    Snore:
+      collection: Snores
+    Honk:
+      collection: CluwneHorn
+    Sigh:
+      collection: FemaleSigh
+    Crying:
+      collection: FemaleCry
+    Whistle:
+      collection: Whistles
+    # ADT-Apathy Sounds.
+    Scream-apathy:
+      collection: FelinidScreams
+    Laugh-apathy:
+      collection: FemaleLaugh
+    Sigh-apathy:
+      collection: FemaleSigh
+    Crying-apathy:
+      collection: FemaleCry
+
+- type: emoteSounds
+  id: MaleResomi
+  voiceSelectorName: humanoid-profile-editor-voice-masculine
+  params:
+    variation: 0.125
+  sounds:
+    Scream:
+      collection: MaleResomiScreams
+    Laugh:
+      collection: ResomiLaughs
+    Cough:
+      collection: ResomiCoughs
+    Sneeze:
+      collection: ResomiSneeze
+    Hiss:
+      collection: ResomiHiss
+    Chirps:
+      collection: ResomiChirps
+    Coos:
+      collection: ResomiCoos
+    Honk:
+      collection: BikeHorn
+    Whistle:
+      collection: Whistles
+    Crying:
+      collection: MaleCry
+    Weh:
+      collection: Weh
+    Gasp:
+      collection: MaleGasp
+    DefaultDeathgasp:
+      collection: DeathGasp
+
+- type: emoteSounds
+  id: FemaleResomi
+  voiceSelectorName: humanoid-profile-editor-voice-feminine
+  params:
+    variation: 0.125
+  sounds:
+    Scream:
+      collection: FemaleResomiScreams
+    Laugh:
+      collection: ResomiLaughs
+    Cough:
+      collection: ResomiCoughs
+    Sneeze:
+      collection: ResomiSneeze
+    Hiss:
+      collection: ResomiHiss
+    Chirps:
+      collection: ResomiChirps
+    Coos:
+      collection: ResomiCoos
+    Honk:
+      collection: BikeHorn
+    Whistle:
+      collection: Whistles
+    Crying:
+      collection: FemaleCry
+    Weh:
+      collection: Weh
+    Gasp:
+      collection: FemaleGasp
+    DefaultDeathgasp:
+      collection: FemaleDeathGasp
+
+- type: emoteSounds
+  id: MaleShadekin
+  voiceSelectorName: humanoid-profile-editor-voice-masculine
+  params:
+    variation: 0.125
+  sounds:
+    Scream:
+      collection: MaleScreams
+    Laugh:
+      collection: MaleLaugh
+    Sneeze:
+      collection: MaleSneezes
+    Cough:
+      collection: MaleCoughs
+    Yawn:
+      collection: MaleYawn
+    Snore:
+      collection: Snores
+    Sigh:
+      collection: MaleSigh
+    Crying:
+      collection: MaleCry
+    Whistle:
+      collection: Whistles
+    Weh:
+      collection: Weh
+    Gasp:
+      collection: MaleGasp
+    DefaultDeathgasp:
+      collection: MaleDeathGasp
+    Spit:
+      collection: HumanSpits
+    Wurble:
+      path: /Audio/ADT/Voice/Shadekin/wurble.ogg
+
+- type: emoteSounds
+  id: FemaleShadekin
+  voiceSelectorName: humanoid-profile-editor-voice-feminine
+  params:
+    variation: 0.125
+  sounds:
+    Scream:
+      collection: FemaleScreams
+    Laugh:
+      collection: FemaleLaugh
+    Sneeze:
+      collection: FemaleSneezes
+    Cough:
+      collection: FemaleCoughs
+    Yawn:
+      collection: FemaleYawn
+    Snore:
+      collection: Snores
+    Sigh:
+      collection: FemaleSigh
+    Crying:
+      collection: FemaleCry
+    Whistle:
+      collection: Whistles
+    Weh:
+      collection: Weh
+    Gasp:
+      collection: FemaleGasp
+    DefaultDeathgasp:
+      collection: FemaleDeathGasp
+    Spit:
+      collection: HumanSpits
+    Wurble:
+      path: /Audio/ADT/Voice/Shadekin/wurble.ogg
+
+- type: emoteSounds
+  id: ShadekinBodyEmotes
+  sounds:
+    Thump:
+      path: /Audio/Voice/Reptilian/reptilian_tailthump.ogg
+      params:
+        variation: 0.125
+    Clap:
+      collection: Claps
+    ClapSingle:
+      collection: ClapSingle
+    Snap:
+      collection: Snaps
+      params:
+        volume: -6
+    Salute:
+      collection: Salutes
+    Purse:
+      path: /Audio/Effects/thudswoosh.ogg
+    Blink:
+      collection: Blink
+
+- type: emoteSounds
+  id: MaleButcher
+  params:
+    variation: 0.125
+  sounds:
+    Scream:
+      collection: ButcherScream
+    Laugh:
+      collection: ButcherLaugh
+    Sneeze:
+      collection: ButcherSneeze
+    Cough:
+      collection: ButcherCough
+    Yawn:
+      collection: ButcherYawn
+    Sigh:
+      collection: ButcherSigh
+    Crying:
+      collection: ButcherCry
+    Whistle:
+      collection: Whistles
+    Spit:
+      collection: HumanSpits
+
+- type: emoteSounds
+  id: Monkey
+  sounds:
+    Scream:
+      path: /Audio/Animals/monkey_scream.ogg
+      params:
+        variation: 0.125
+    Whistle:
+      collection: Whistles
+      params:
+        variation: 0.125
+    Snore:
+      collection: Snores
+      params:
+        pitch: 1.3
+        volume: -5
+        variation: 0.125
+    Laugh:
+      path: /Audio/ADT/Animals/monkey_laugh.ogg
+      params:
+        variation: 0.125
+    Gasp:
+      collection: MaleGasp
+      params:
+        pitch: 1.3
+        volume: -5
+        variation: 0.025
+    Spit:
+      collection: HumanSpits
+    Weh:
+      collection: Weh
+
+## Celecern
+- type: emoteSounds
+  id: ADTCelecernMale
+  voiceSelectorName: humanoid-profile-editor-voice-masculine
+  params:
+    variation: 0.125
+  sounds:
+    Scream:
+      collection: MaleScreams
+    Laugh:
+      collection: MaleLaugh
+    Sneeze:
+      collection: MaleSneezes
+    Cough:
+      collection: MaleCoughs
+    CatMeow:
+      collection: CatMeows
+    CatHisses:
+      collection: CatHisses
+    MonkeyScreeches:
+      collection: MonkeyScreeches
+    RobotBeep:
+      collection: RobotBeeps
+    Yawn:
+      collection: MaleYawn
+    Snore:
+      collection: Snores
+    Honk:
+      collection: BikeHorn
+    Sigh:
+      collection: MaleSigh
+    Crying:
+      collection: MaleCry
+    Whistle:
+      collection: Whistles
+    Weh:
+      collection: Weh
+    Hew:
+      collection: Hew
+    Gasp:
+      collection: MaleGasp
+    DefaultDeathgasp:
+      collection: MaleDeathGasp
+    Spit:
+      collection: HumanSpits
+    ADTCelecernSnort:
+      collection: ADTCelecernSnort
+    ADTCelecernClop:
+      collection: ADTCelecernClop
+
+- type: emoteSounds
+  id: ADTCelecernFemale
+  voiceSelectorName: humanoid-profile-editor-voice-feminine
+  params:
+    variation: 0.125
+  sounds:
+    Scream:
+      collection: FemaleScreams
+    Laugh:
+      collection: FemaleLaugh
+    Sneeze:
+      collection: FemaleSneezes
+    Cough:
+      collection: FemaleCoughs
+    CatMeow:
+      collection: CatMeows
+    CatHisses:
+      collection: CatHisses
+    MonkeyScreeches:
+      collection: MonkeyScreeches
+    RobotBeep:
+      collection: RobotBeeps
+    Yawn:
+      collection: FemaleYawn
+    Snore:
+      collection: Snores
+    Honk:
+      collection: CluwneHorn
+    Sigh:
+      collection: FemaleSigh
+    Crying:
+      collection: FemaleCry
+    Whistle:
+      collection: Whistles
+    Weh:
+      collection: Weh
+    Hew:
+      collection: Hew
+    Gasp:
+      collection: FemaleGasp
+    DefaultDeathgasp:
+      collection: FemaleDeathGasp
+    Spit:
+      collection: HumanSpits
+    ADTCelecernSnort:
+      collection: ADTCelecernSnort
+    ADTCelecernClop:
+      collection: ADTCelecernClop

@@ -1,0 +1,74 @@
+- type: entity
+  parent: BaseComputerCircuitboard
+  id: ADTSalvageShuttleConsoleCircuitboard
+  name: salvage shuttle console board
+  description: A computer printed circuit board for a salvage shuttle console.
+  components:
+    - type: Sprite
+      state: cpu_supply
+    - type: ComputerBoard
+      prototype: ADTComputerShuttleSalvage
+    # - type: StealTarget
+    #   stealGroup: SalvageShuttleConsoleCircuitboard
+
+- type: entity
+  parent: BaseComputerCircuitboard
+  id: ADTSecShuttleConsoleCircuitboard
+  name: sec shuttle console board
+  description: A computer printed circuit board for a sec shuttle console.
+  components:
+    - type: Sprite
+      state: cpu_security
+    - type: ComputerBoard
+      prototype: ADTComputerSecShuttle
+
+## Supermatter
+- type: entity
+  parent: [ BaseComputerCircuitboard, BaseEngineeringContraband ]
+  id: SupermatterComputerCircuitboard
+  name: supermatter monitoring console board
+  description: A computer printed circuit board for a supermatter monitoring console.
+  components:
+    - type: Sprite
+      state: cpu_engineering
+    - type: ComputerBoard
+      prototype: ComputerSupermatter
+
+## Minesweeper
+- type: entity
+  parent: BaseComputerCircuitboard
+  id: MinesweeperCircuitboard
+  components:
+    - type: ComputerBoard
+      prototype: MinesweeperArcade
+
+- type: entity
+  parent: BaseComputerCircuitboard
+  id: ADTBotanicalSeedDNAManipulatorCircuitboard
+  name: plant seed DNA manipulator computer board
+  description: A computer printed circuit board for a plant seed DNA manipulator console.
+  components:
+    - type: Sprite
+      state: cpu_service
+    - type: ComputerBoard
+      prototype: ADTComputerBotanicalSeedDNAManipulator
+
+- type: entity
+  parent: [BaseComputerCircuitboard, BaseCommandContraband]
+  id: ArtilleryComputerCircuitboard
+  name: artillery console circuit board
+  description: A circuit board of navigation system for bluespace artillery.
+  components:
+    - type: Sprite
+      sprite: ADT/Structures/Machines/BSA.rsi
+      state: board
+    - type: ComputerBoard
+      prototype: ArtilleryConsole
+    - type: StaticPrice
+      price: 1250
+    - type: PhysicalComposition
+      materialComposition:
+        Glass: 75
+    - type: Tag
+      tags:
+      - BoardBSA

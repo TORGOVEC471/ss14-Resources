@@ -1,0 +1,14 @@
+marking-VoxFacialHairColonel = Вокс, Полковник
+marking-VoxFacialHairFu = Вокс, Перья Фу
+marking-VoxFacialHairNeck = Вокс, Шейные перья
+marking-VoxFacialHairBeard = Вокс, Перьевая борода
+marking-VoxFacialHairMane = Вокс, Борода (Грива)
+marking-VoxFacialHairManeSmall = Вокс, Борода (Малая грива)
+marking-VoxFacialHairTufts = Вокс, Бакенбарды (Пряди)
+marking-VoxFacialHairBeard-beard_s = { marking-VoxFacialHairBeard }
+marking-VoxFacialHairColonel-colonel_s = { marking-VoxFacialHairColonel }
+marking-VoxFacialHairFu-fu_s = { marking-VoxFacialHairFu }
+marking-VoxFacialHairNeck-neck_s = { marking-VoxFacialHairNeck }
+marking-VoxFacialHairMane-mane_s = { marking-VoxFacialHairMane }
+marking-VoxFacialHairManeSmall-manesmall_s = { marking-VoxFacialHairManeSmall }
+marking-VoxFacialHairTufts-tuft_s = { marking-VoxFacialHairTufts }

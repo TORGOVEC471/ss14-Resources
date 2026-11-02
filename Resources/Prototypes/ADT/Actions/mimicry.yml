@@ -1,0 +1,16 @@
+- type: entity
+  id: ADTActionTeatacles
+  name: tentacles
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Action
+    useDelay: 10
+    itemIconStyle: BigAction
+  - type: Sprite
+    sprite: ADT/Objects/Weapons/Melee/mimicria_sword.rsi
+    layers:
+    - state: icon
+  - type: InstantAction
+    event: !type:InstantSpawnSpellEvent
+      prototype: ADTEffectiMicriaTentacleSpawn
+      posData: !type:TargetInFront
